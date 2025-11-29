@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Speech Organs &amp; Intonation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Poppins:wght@400;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", sans-serif;
+        background-color: #f3f4f6;
+      }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #0f172a;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .title-font {
+        font-family: "Poppins", sans-serif;
+      }
+      .geometric-shape {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(80px);
+        z-index: 0;
+      }
+      .glass-panel {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+      }
+      .organ-item {
+        transition: all 0.3s ease;
+        border-left: 3px solid transparent;
+      }
+      .organ-item:hover {
+        background: rgba(255, 255, 255, 0.05);
+        border-left-color: #3b82f6;
+        padding-left: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container text-white">
+      <!-- Background Ambience -->
+      <div
+        class="geometric-shape bg-indigo-600 opacity-20"
+        style="width: 700px; height: 700px; top: -300px; right: -100px"
+      ></div>
+      <div
+        class="geometric-shape bg-blue-500 opacity-10"
+        style="width: 500px; height: 500px; bottom: -100px; left: -100px"
+      ></div>
+      <!-- Header -->
+      <div class="relative z-10 px-16 pt-12 pb-4">
+        <div class="flex items-center gap-3 mb-3">
+          <span
+            class="bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider"
+            >Pronunciation</span
+          >
+          <div class="h-px w-12 bg-indigo-500/30"></div>
+        </div>
+        <h1 class="text-4xl font-bold title-font leading-tight">
+          Speech Organs &amp; Intonation
+        </h1>
+        <p class="text-lg text-slate-400 mt-1 font-light">
+          Understanding the mechanics of sound production
+        </p>
+      </div>
+      <!-- Main Content -->
+      <div class="relative z-10 flex-1 px-16 pb-12 flex items-center">
+        <div class="grid grid-cols-2 gap-12 w-full h-full">
+          <!-- Left Column: Text Content -->
+          <div class="flex flex-col gap-6 justify-center">
+            <!-- Section 1: Speech Organs -->
+            <div class="glass-panel p-6">
+              <div class="flex items-center gap-3 mb-4">
+                <div
+                  class="w-8 h-8 rounded-lg bg-blue-500/20 flex items-center justify-center"
+                >
+                  <i class="fas fa-lungs text-blue-400 text-sm"></i>
+                </div>
+                <h3 class="text-xl font-semibold title-font">
+                  The Speech Organs
+                </h3>
+              </div>
+              <div class="space-y-2 text-slate-300 text-sm">
+                <div class="organ-item py-1 flex items-center gap-3">
+                  <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+                  <p>
+                    <span class="text-white font-medium">Lungs:</span> The power
+                    source (airflow)
+                  </p>
+                </div>
+                <div class="organ-item py-1 flex items-center gap-3">
+                  <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+                  <p>
+                    <span class="text-white font-medium">Vocal Cords:</span>
+                    Vibration &amp; voicing
+                  </p>
+                </div>
+                <div class="organ-item py-1 flex items-center gap-3">
+                  <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+                  <p>
+                    <span class="text-white font-medium">Articulators:</span>
+                    Tongue, teeth, &amp; lips
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Section 2: Intonation -->
+            <div class="glass-panel p-6 border-l-4 border-l-purple-500">
+              <div class="flex items-center gap-3 mb-3">
+                <i class="fas fa-wave-square text-purple-400"></i>
+                <h3 class="text-xl font-semibold title-font">Intonation</h3>
+              </div>
+              <p class="text-slate-300 text-sm leading-relaxed mb-3">
+                The rise and fall of pitch used to convey meaning, emotion, and
+                emphasis in spoken English.
+              </p>
+              <div class="flex gap-2">
+                <span
+                  class="px-2 py-1 bg-purple-500/10 rounded text-xs text-purple-300 border border-purple-500/20"
+                  >Rising Pitch ↗</span
+                >
+                <span
+                  class="px-2 py-1 bg-purple-500/10 rounded text-xs text-purple-300 border border-purple-500/20"
+                  >Falling Pitch ↘</span
+                >
+              </div>
+            </div>
+            <!-- Section 3: Goal -->
+            <div
+              class="bg-gradient-to-r from-slate-800 to-slate-800/50 p-4 rounded-xl border border-slate-700 flex items-center justify-between"
+            >
+              <div>
+                <p
+                  class="text-xs text-slate-400 uppercase tracking-wide font-semibold"
+                >
+                  Practice Goal
+                </p>
+                <p class="text-white font-medium mt-1">
+                  Reduce accent &amp; improve global clarity
+                </p>
+              </div>
+              <div
+                class="w-10 h-10 bg-green-500/20 rounded-full flex items-center justify-center"
+              >
+                <i class="fas fa-check text-green-400"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Right Column: Diagram/Image -->
+          <div class="h-full flex flex-col justify-center">
+            <div
+              class="relative w-full aspect-[4/3] bg-white rounded-2xl overflow-hidden shadow-2xl border border-slate-600 p-2"
+            >
+              <div
+                class="w-full h-full bg-slate-100 rounded-xl overflow-hidden relative group"
+              >
+                <!-- Using a representative diagram image from the search results -->
+                <img
+                  alt="Speech Organs Diagram"
+                  class="w-full h-full object-contain p-4 mix-blend-multiply filter contrast-125"
+                  src="https://page.gensparksite.com/slides_images/f9b9b9827d03072a2ebce30d2ca96c34.webp"
+                />
+                <!-- Interactive-style overlay markers (Decorative) -->
+                <div
+                  class="absolute top-1/3 left-1/3 w-3 h-3 bg-blue-500 rounded-full shadow-lg animate-pulse"
+                ></div>
+                <div
+                  class="absolute bottom-1/3 right-1/3 w-3 h-3 bg-purple-500 rounded-full shadow-lg animate-pulse delay-75"
+                ></div>
+                <div
+                  class="absolute bottom-0 left-0 right-0 bg-white/90 backdrop-blur py-2 px-4 border-t border-slate-200 flex justify-between items-center"
+                >
+                  <span class="text-slate-600 text-xs font-bold uppercase"
+                    >Sagittal Section</span
+                  >
+                  <i class="fas fa-search-plus text-slate-400"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-center text-slate-500 text-xs mt-4">
+              <i class="fas fa-info-circle mr-1"></i>
+              Clear articulation depends on the precise movement of these
+              organs.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div
+        class="relative z-10 px-16 py-6 border-t border-slate-800/50 flex justify-between items-center text-sm text-slate-500"
+      >
+        <div class="flex items-center gap-2">
+          <i class="fas fa-microphone-alt"></i>
+          <p>Unit 1: Communication Skills</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <span>Page 09</span>
+          <div class="w-16 h-1 bg-slate-800 rounded-full overflow-hidden">
+            <div class="w-3/4 h-full bg-indigo-500"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

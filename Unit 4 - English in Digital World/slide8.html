@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Academic Integrity &amp; Citation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Poppins:wght@400;600;700&amp;family=Roboto+Mono:wght@400;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", sans-serif;
+        background-color: #f3f4f6;
+      }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #0f172a;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .title-font {
+        font-family: "Poppins", sans-serif;
+      }
+      .code-font {
+        font-family: "Roboto Mono", monospace;
+      }
+      .geometric-shape {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(60px);
+        z-index: 0;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+        transition: all 0.3s ease;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .glass-card:hover {
+        background: rgba(255, 255, 255, 0.05);
+        transform: translateY(-5px);
+        border-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      }
+      .example-box {
+        background: rgba(0, 0, 0, 0.3);
+        border-left: 3px solid;
+        padding: 16px;
+        border-radius: 0 8px 8px 0;
+        margin-top: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container text-white">
+      <!-- Background Elements -->
+      <div
+        class="geometric-shape bg-indigo-600 opacity-20"
+        style="width: 900px; height: 900px; top: -400px; right: -200px"
+      ></div>
+      <div
+        class="geometric-shape bg-blue-500 opacity-10"
+        style="width: 600px; height: 600px; bottom: -200px; left: -100px"
+      ></div>
+      <!-- Header -->
+      <div class="relative z-10 px-16 pt-12 pb-8">
+        <div class="flex items-center gap-4 mb-3">
+          <div
+            class="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider"
+          >
+            Research Standards
+          </div>
+          <div class="h-px flex-1 bg-slate-700"></div>
+        </div>
+        <h1 class="text-4xl font-bold title-font leading-tight mb-2">
+          Academic Integrity &amp; Citation
+        </h1>
+        <p class="text-lg text-slate-400 max-w-3xl">
+          Giving credit to original authors builds trust, shows honesty, and
+          encourages original thinking in professional work.
+        </p>
+      </div>
+      <!-- Content Grid -->
+      <div class="relative z-10 px-16 pb-12 flex-1">
+        <div class="grid grid-cols-3 gap-8 h-full">
+          <!-- Card 1: APA Style -->
+          <div class="glass-card p-8 group border-t-4 border-t-emerald-500">
+            <div class="flex items-center justify-between mb-6">
+              <div
+                class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center group-hover:bg-emerald-500/20 transition-colors"
+              >
+                <i class="fas fa-flask text-2xl text-emerald-400"></i>
+              </div>
+              <span
+                class="text-emerald-500/50 text-4xl font-bold opacity-20 title-font"
+                >01</span
+              >
+            </div>
+            <h3 class="text-2xl font-bold title-font text-white mb-4">
+              APA Style
+            </h3>
+            <p class="text-slate-300 text-sm leading-relaxed mb-6">
+              American Psychological Association. Used in sciences and
+              engineering. Emphasizes the date of publication to track currency.
+            </p>
+            <div class="mt-auto">
+              <p
+                class="text-xs text-emerald-400 uppercase font-bold mb-2 tracking-wider"
+              >
+                Format
+              </p>
+              <div class="example-box border-emerald-500">
+                <p class="text-slate-200 italic font-medium text-sm mb-2">
+                  "Author, A. A. (Year). Title of work. Publisher."
+                </p>
+                <p class="text-xs text-slate-500 code-font">
+                  <i class="fas fa-pen-alt mr-1"></i> Reference List Entry
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2: MLA Style -->
+          <div class="glass-card p-8 group border-t-4 border-t-blue-500">
+            <div class="flex items-center justify-between mb-6">
+              <div
+                class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center group-hover:bg-blue-500/20 transition-colors"
+              >
+                <i class="fas fa-feather-alt text-2xl text-blue-400"></i>
+              </div>
+              <span
+                class="text-blue-500/50 text-4xl font-bold opacity-20 title-font"
+                >02</span
+              >
+            </div>
+            <h3 class="text-2xl font-bold title-font text-white mb-4">
+              MLA Style
+            </h3>
+            <p class="text-slate-300 text-sm leading-relaxed mb-6">
+              Modern Language Association. Common in humanities and arts.
+              Focuses on authorship and location of the source.
+            </p>
+            <div class="mt-auto">
+              <p
+                class="text-xs text-blue-400 uppercase font-bold mb-2 tracking-wider"
+              >
+                Format
+              </p>
+              <div class="example-box border-blue-500">
+                <p class="text-slate-200 italic font-medium text-sm mb-2">
+                  "Author, First Last. Title of Source. Publisher, Year."
+                </p>
+                <p class="text-xs text-slate-500 code-font">
+                  <i class="fas fa-pen-alt mr-1"></i> Works Cited Entry
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3: Chicago Style -->
+          <div class="glass-card p-8 group border-t-4 border-t-purple-500">
+            <div class="flex items-center justify-between mb-6">
+              <div
+                class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center group-hover:bg-purple-500/20 transition-colors"
+              >
+                <i class="fas fa-landmark text-2xl text-purple-400"></i>
+              </div>
+              <span
+                class="text-purple-500/50 text-4xl font-bold opacity-20 title-font"
+                >03</span
+              >
+            </div>
+            <h3 class="text-2xl font-bold title-font text-white mb-4">
+              Chicago Style
+            </h3>
+            <p class="text-slate-300 text-sm leading-relaxed mb-6">
+              Used in history and business. Flexible system offering both
+              Notes-Bibliography and Author-Date formats.
+            </p>
+            <div class="mt-auto">
+              <p
+                class="text-xs text-purple-400 uppercase font-bold mb-2 tracking-wider"
+              >
+                Format
+              </p>
+              <div class="example-box border-purple-500">
+                <p class="text-slate-200 italic font-medium text-sm mb-2">
+                  "Last, First. Year. Title of Book. Place: Publisher."
+                </p>
+                <p class="text-xs text-slate-500 code-font">
+                  <i class="fas fa-pen-alt mr-1"></i> Bibliography Entry
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div
+        class="relative z-10 px-16 py-6 border-t border-slate-800/50 flex justify-between items-center text-sm text-slate-500 bg-slate-900/30 backdrop-blur-sm"
+      >
+        <div class="flex items-center gap-2">
+          <i class="fas fa-briefcase"></i>
+          <p>Unit 4: English in Digital World</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <span>Page 44</span>
+          <div class="w-16 h-1 bg-slate-800 rounded-full overflow-hidden">
+            <div class="w-full h-full bg-blue-500"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

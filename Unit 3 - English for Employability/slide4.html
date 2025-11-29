@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Tenses: Time of Action</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Poppins:wght@400;600;700&amp;family=Roboto+Mono:wght@400;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", sans-serif;
+        background-color: #f3f4f6;
+      }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #0f172a;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .title-font {
+        font-family: "Poppins", sans-serif;
+      }
+      .code-font {
+        font-family: "Roboto Mono", monospace;
+      }
+      .geometric-shape {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(60px);
+        z-index: 0;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+        transition: all 0.3s ease;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .glass-card:hover {
+        background: rgba(255, 255, 255, 0.05);
+        transform: translateY(-5px);
+        border-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      }
+      .example-box {
+        background: rgba(0, 0, 0, 0.3);
+        border-left: 3px solid;
+        padding: 16px;
+        border-radius: 0 8px 8px 0;
+        margin-top: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container text-white">
+      <!-- Background Elements -->
+      <div
+        class="geometric-shape bg-amber-600 opacity-10"
+        style="width: 900px; height: 900px; top: -400px; left: -200px"
+      ></div>
+      <div
+        class="geometric-shape bg-blue-600 opacity-10"
+        style="width: 800px; height: 800px; bottom: -300px; right: -200px"
+      ></div>
+      <!-- Header -->
+      <div class="relative z-10 px-16 pt-12 pb-8">
+        <div class="flex items-center gap-4 mb-3">
+          <div
+            class="bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider"
+          >
+            Grammar Focus
+          </div>
+          <div class="h-px flex-1 bg-slate-700"></div>
+        </div>
+        <h1 class="text-4xl font-bold title-font leading-tight mb-2">
+          Tenses: Time of Action
+        </h1>
+        <p class="text-lg text-slate-400 max-w-3xl">
+          Mastering verb tenses to accurately convey timeline, status, and
+          planning in professional environments.
+        </p>
+      </div>
+      <!-- Content Grid -->
+      <div class="relative z-10 px-16 pb-12 flex-1">
+        <div class="grid grid-cols-3 gap-8 h-full">
+          <!-- Card 1: Past Tense -->
+          <div class="glass-card p-8 group border-t-4 border-t-amber-500">
+            <div class="flex items-center justify-between mb-6">
+              <div
+                class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center group-hover:bg-amber-500/20 transition-colors"
+              >
+                <i class="fas fa-history text-2xl text-amber-400"></i>
+              </div>
+              <span
+                class="text-amber-500/50 text-4xl font-bold opacity-20 title-font"
+                >Past</span
+              >
+            </div>
+            <h3 class="text-2xl font-bold title-font text-white mb-4">
+              Past Tense
+            </h3>
+            <p class="text-slate-300 text-sm leading-relaxed mb-6">
+              Describes actions or states completed before the present moment.
+              Essential for reporting results, documenting history, and
+              reviewing milestones.
+            </p>
+            <div class="mt-auto">
+              <p
+                class="text-xs text-amber-400 uppercase font-bold mb-2 tracking-wider"
+              >
+                Completed Action
+              </p>
+              <div class="example-box border-amber-500">
+                <p class="text-slate-200 italic font-medium text-sm mb-2">
+                  "The team finalized the design yesterday."
+                </p>
+                <p class="text-xs text-slate-500 code-font">
+                  <i class="fas fa-check mr-1"></i> [Subject] +
+                  [Verb-ed/Irregular]
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2: Present Tense -->
+          <div class="glass-card p-8 group border-t-4 border-t-emerald-500">
+            <div class="flex items-center justify-between mb-6">
+              <div
+                class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center group-hover:bg-emerald-500/20 transition-colors"
+              >
+                <i class="fas fa-stopwatch text-2xl text-emerald-400"></i>
+              </div>
+              <span
+                class="text-emerald-500/50 text-4xl font-bold opacity-20 title-font"
+                >Pres</span
+              >
+            </div>
+            <h3 class="text-2xl font-bold title-font text-white mb-4">
+              Present Tense
+            </h3>
+            <p class="text-slate-300 text-sm leading-relaxed mb-6">
+              Indicates current actions, ongoing states, or general truths. Used
+              for status updates, standard operating procedures, and real-time
+              monitoring.
+            </p>
+            <div class="mt-auto">
+              <p
+                class="text-xs text-emerald-400 uppercase font-bold mb-2 tracking-wider"
+              >
+                Routine / Fact
+              </p>
+              <div class="example-box border-emerald-500">
+                <p class="text-slate-200 italic font-medium text-sm mb-2">
+                  "The system monitors data in real-time."
+                </p>
+                <p class="text-xs text-slate-500 code-font">
+                  <i class="fas fa-sync mr-1"></i> [Subject] + [Verb / Verb-s]
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3: Future Tense -->
+          <div class="glass-card p-8 group border-t-4 border-t-blue-500">
+            <div class="flex items-center justify-between mb-6">
+              <div
+                class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center group-hover:bg-blue-500/20 transition-colors"
+              >
+                <i class="fas fa-forward text-2xl text-blue-400"></i>
+              </div>
+              <span
+                class="text-blue-500/50 text-4xl font-bold opacity-20 title-font"
+                >Futr</span
+              >
+            </div>
+            <h3 class="text-2xl font-bold title-font text-white mb-4">
+              Future Tense
+            </h3>
+            <p class="text-slate-300 text-sm leading-relaxed mb-6">
+              Expresses actions expected to happen later. Critical for project
+              proposals, scheduling upcoming tasks, and strategic planning.
+            </p>
+            <div class="mt-auto">
+              <p
+                class="text-xs text-blue-400 uppercase font-bold mb-2 tracking-wider"
+              >
+                Planned Action
+              </p>
+              <div class="example-box border-blue-500">
+                <p class="text-slate-200 italic font-medium text-sm mb-2">
+                  "We will launch the beta next month."
+                </p>
+                <p class="text-xs text-slate-500 code-font">
+                  <i class="fas fa-rocket mr-1"></i> [Subject] + will + [Verb]
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div
+        class="relative z-10 px-16 py-6 border-t border-slate-800/50 flex justify-between items-center text-sm text-slate-500 bg-slate-900/30 backdrop-blur-sm"
+      >
+        <div class="flex items-center gap-2">
+          <i class="fas fa-briefcase"></i>
+          <p>Unit 3: English for Employability</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <span>Page 28</span>
+          <div class="w-16 h-1 bg-slate-800 rounded-full overflow-hidden">
+            <div class="w-full h-full bg-amber-500"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

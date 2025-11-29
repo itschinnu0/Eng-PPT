@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Unit 3: English in Digital World</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Poppins:wght@400;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", sans-serif;
+        background-color: #f3f4f6;
+      }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #0f172a; /* Slate 900 */
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .title-font {
+        font-family: "Poppins", sans-serif;
+      }
+      .geometric-shape {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(100px);
+        z-index: 0;
+      }
+      .content-box {
+        position: relative;
+        z-index: 10;
+        text-align: center;
+        max-width: 1000px;
+      }
+      /* Animated rings for visual interest */
+      .ring-decoration {
+        position: absolute;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container text-white">
+      <!-- Abstract Background Shapes -->
+      <div
+        class="geometric-shape bg-teal-600 opacity-20"
+        style="width: 800px; height: 800px; top: -200px; right: -200px"
+      ></div>
+      <div
+        class="geometric-shape bg-indigo-700 opacity-20"
+        style="width: 600px; height: 600px; bottom: -100px; left: -100px"
+      ></div>
+      <!-- Concentric Rings Decoration -->
+      <div class="ring-decoration" style="width: 600px; height: 600px"></div>
+      <div class="ring-decoration" style="width: 800px; height: 800px"></div>
+      <div class="ring-decoration" style="width: 1000px; height: 1000px"></div>
+      <!-- Main Content -->
+      <div class="content-box px-10">
+        <!-- Unit Label -->
+        <div class="inline-block mb-6">
+          <div class="flex items-center justify-center space-x-4">
+            <div class="h-px w-12 bg-teal-500"></div>
+            <p
+              class="text-teal-400 font-bold tracking-[0.3em] uppercase text-sm title-font"
+            >
+              Unit 04
+            </p>
+            <div class="h-px w-12 bg-teal-500"></div>
+          </div>
+        </div>
+        <!-- Main Title -->
+        <h1
+          class="text-6xl font-extrabold title-font text-white mb-8 tracking-tight leading-tight"
+        >
+          English in
+          <span
+            class="text-transparent bg-clip-text bg-white"
+            style="-webkit-text-stroke: 1px white; color: transparent"
+            >Digital World</span
+          >
+        </h1>
+        <!-- Description Container -->
+        <div
+          class="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 mx-auto mt-8 max-w-3xl transform hover:scale-105 transition-transform duration-500"
+        >
+          <h2 class="text-2xl font-semibold text-white mb-4 title-font">
+            Research, Communicate, and Act Ethically
+          </h2>
+          <div class="h-px w-24 bg-teal-500 mx-auto mb-6 opacity-50"></div>
+          <p class="text-slate-300 text-lg leading-relaxed">
+            Using English effectively in digital spaces: searching smartly, communicating online, behaving ethically, and writing with academic integrity.
+          </p>
+        </div>
+        <!-- Icons Row -->
+        <div class="flex justify-center gap-12 mt-12 text-slate-400">
+          <div class="flex flex-col items-center gap-2 group">
+            <div
+              class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-teal-500 group-hover:text-white transition-colors duration-300"
+            >
+              <i class="fas fa-search text-xl"></i>
+            </div>
+            <span class="text-xs uppercase tracking-wider font-medium"
+              >Research</span
+            >
+          </div>
+          <div class="flex flex-col items-center gap-2 group">
+            <div
+              class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-teal-500 group-hover:text-white transition-colors duration-300"
+            >
+              <i class="fas fa-cloud text-xl"></i>
+            </div>
+            <span class="text-xs uppercase tracking-wider font-medium"
+              >Online</span
+            >
+          </div>
+          <div class="flex flex-col items-center gap-2 group">
+            <div
+              class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-teal-500 group-hover:text-white transition-colors duration-300"
+            >
+              <i class="fas fa-pencil text-xl"></i>
+            </div>
+            <span class="text-xs uppercase tracking-wider font-medium"
+              >Writing</span
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div
+        class="absolute bottom-0 left-0 w-full p-8 flex justify-between items-center text-slate-500 text-sm"
+      >
+        <p class="font-mono">English in Digital World</p>
+        <div class="flex items-center gap-2">
+          <span class="h-1 w-1 rounded-full bg-teal-500"></span>
+          <span>Next Chapter</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

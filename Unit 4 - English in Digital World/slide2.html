@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Synchronous vs Asynchronous Tools</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Poppins:wght@400;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", sans-serif;
+        background-color: #f3f4f6;
+      }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #0f172a;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .title-font {
+        font-family: "Poppins", sans-serif;
+      }
+      .geometric-shape {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(80px);
+        z-index: 0;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+        height: 100%;
+        transition: all 0.3s ease;
+      }
+      .glass-card:hover {
+        background: rgba(255, 255, 255, 0.06);
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container text-white">
+      <!-- Background Elements -->
+      <div
+        class="geometric-shape bg-blue-700 opacity-20"
+        style="width: 800px; height: 800px; top: -400px; right: -200px"
+      ></div>
+      <div
+        class="geometric-shape bg-teal-600 opacity-10"
+        style="width: 600px; height: 600px; bottom: -200px; left: -200px"
+      ></div>
+      <!-- Header Section -->
+      <div class="relative z-10 px-16 pt-10 pb-6">
+        <div class="flex items-center gap-4 mb-3">
+          <div
+            class="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider"
+          >
+            Digital Tools
+          </div>
+          <div class="h-px flex-1 bg-slate-700"></div>
+        </div>
+        <h1 class="text-4xl font-bold title-font leading-tight">
+          Synchronous vs Asynchronous Tools
+        </h1>
+        <p class="text-lg text-slate-400 mt-1">
+          Selecting the Right Mode for Real-Time and Delayed Communication
+        </p>
+      </div>
+      <!-- Main Content Grid -->
+      <div
+        class="relative z-10 flex-1 px-16 pb-12 flex flex-col justify-center"
+      >
+        <div class="grid grid-cols-3 gap-8 h-full max-h-[450px]">
+          <!-- Card 1: Synchronous -->
+          <div
+            class="glass-card group border-t-4 border-t-blue-500 p-8 flex flex-col"
+          >
+            <div
+              class="w-14 h-14 rounded-2xl bg-blue-500/10 flex items-center justify-center mb-6 group-hover:bg-blue-500/20 transition-colors"
+            >
+              <i class="fas fa-video text-2xl text-blue-400"></i>
+            </div>
+            <h3 class="text-2xl font-bold title-font mb-4 text-white">
+              Synchronous
+            </h3>
+            <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+              Real-time interaction where participants engage simultaneously for
+              immediate feedback.
+            </p>
+            <div class="mt-auto space-y-3">
+              <div class="flex items-center gap-3 text-slate-300">
+                <i class="fas fa-check text-blue-500 text-sm"></i>
+                <p class="text-sm">Video Calls (Zoom/Teams)</p>
+              </div>
+              <div class="flex items-center gap-3 text-slate-300">
+                <i class="fas fa-check text-blue-500 text-sm"></i>
+                <p class="text-sm">Instant Messaging</p>
+              </div>
+              <div class="flex items-center gap-3 text-slate-300">
+                <i class="fas fa-check text-blue-500 text-sm"></i>
+                <p class="text-sm">Live Webinars</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2: Asynchronous -->
+          <div
+            class="glass-card group border-t-4 border-t-teal-500 p-8 flex flex-col"
+          >
+            <div
+              class="w-14 h-14 rounded-2xl bg-teal-500/10 flex items-center justify-center mb-6 group-hover:bg-teal-500/20 transition-colors"
+            >
+              <i class="fas fa-envelope-open-text text-2xl text-teal-400"></i>
+            </div>
+            <h3 class="text-2xl font-bold title-font mb-4 text-white">
+              Asynchronous
+            </h3>
+            <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+              Communication happening over time, allowing for thoughtful,
+              delayed responses.
+            </p>
+            <div class="mt-auto space-y-3">
+              <div class="flex items-center gap-3 text-teal-500 text-slate-300">
+                <i class="fas fa-check text-teal-500 text-sm"></i>
+                <p class="text-sm">Email &amp; Discussion Boards</p>
+              </div>
+              <div class="flex items-center gap-3 text-slate-300">
+                <i class="fas fa-check text-teal-500 text-sm"></i>
+                <p class="text-sm">Forums &amp; Q&amp;A Sites</p>
+              </div>
+              <div class="flex items-center gap-3 text-slate-300">
+                <i class="fas fa-check text-teal-500 text-sm"></i>
+                <p class="text-sm">Project Management Boards</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3: Strategic Choice -->
+          <div
+            class="glass-card group border-t-4 border-t-purple-500 p-8 flex flex-col"
+          >
+            <div
+              class="w-14 h-14 rounded-2xl bg-purple-500/10 flex items-center justify-center mb-6 group-hover:bg-purple-500/20 transition-colors"
+            >
+              <i class="fas fa-sliders-h text-2xl text-purple-400"></i>
+            </div>
+            <h3 class="text-2xl font-bold title-font mb-4 text-white">
+              When to Choose
+            </h3>
+            <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+              Balancing urgency and depth to select the most effective
+              communication channel.
+            </p>
+            <div class="mt-auto space-y-3">
+              <div class="flex items-center gap-3 text-slate-300">
+                <i class="fas fa-check text-purple-500 text-sm"></i>
+                <p class="text-sm">High vs. Low Urgency</p>
+              </div>
+              <div class="flex items-center gap-3 text-slate-300">
+                <i class="fas fa-check text-purple-500 text-sm"></i>
+                <p class="text-sm">Global Time Zones</p>
+              </div>
+              <div class="flex items-center gap-3 text-slate-300">
+                <i class="fas fa-check text-purple-500 text-sm"></i>
+                <p class="text-sm">Depth of Detail Needed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div
+        class="relative z-10 px-16 py-6 border-t border-slate-800/50 flex justify-between items-center text-sm text-slate-500"
+      >
+        <div class="flex items-center gap-2">
+          <i class="fas fa-laptop-code"></i>
+          <p>Unit 4: English in Digital World</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <span>Page 38</span>
+          <div class="w-16 h-1 bg-slate-800 rounded-full overflow-hidden">
+            <div class="w-3/4 h-full bg-blue-500"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

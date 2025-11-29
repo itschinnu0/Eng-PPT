@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Grammar: Conditional Clauses</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Poppins:wght@400;600;700&amp;family=Roboto+Mono:wght@400;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", sans-serif;
+        background-color: #f3f4f6;
+      }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #0f172a;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .title-font {
+        font-family: "Poppins", sans-serif;
+      }
+      .code-font {
+        font-family: "Roboto Mono", monospace;
+      }
+      .geometric-shape {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(60px);
+        z-index: 0;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+        transition: all 0.3s ease;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .glass-card:hover {
+        background: rgba(255, 255, 255, 0.05);
+        transform: translateY(-5px);
+        border-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      }
+      .example-box {
+        background: rgba(0, 0, 0, 0.3);
+        border-left: 3px solid;
+        padding: 12px;
+        border-radius: 0 8px 8px 0;
+        margin-top: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container text-white">
+      <!-- Background Elements -->
+      <div
+        class="geometric-shape bg-indigo-600 opacity-20"
+        style="width: 800px; height: 800px; top: -300px; right: -100px"
+      ></div>
+      <div
+        class="geometric-shape bg-cyan-500 opacity-10"
+        style="width: 600px; height: 600px; bottom: -200px; left: -100px"
+      ></div>
+      <!-- Header -->
+      <div class="relative z-10 px-16 pt-10 pb-4">
+        <div class="flex items-center gap-4 mb-2">
+          <div
+            class="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider"
+          >
+            Unit 3: English for Employability
+          </div>
+          <div class="h-px flex-1 bg-slate-700"></div>
+        </div>
+        <h1 class="text-4xl font-bold title-font leading-tight mb-2">
+          Grammar: Conditional Clauses
+        </h1>
+        <p class="text-lg text-slate-400 max-w-4xl">
+          Structuring logical relationships between conditions and results
+          (If... then...) to express facts, plans, and possibilities.
+        </p>
+      </div>
+      <!-- Content Grid -->
+      <div class="relative z-10 px-16 pb-10 flex-1">
+        <div class="grid grid-cols-2 gap-6 h-full">
+          <!-- Row 1 -->
+          <!-- Card 1: Zero Conditional -->
+          <div class="glass-card p-6 group border-t-4 border-t-blue-500">
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3
+                  class="text-xl font-bold title-font text-white flex items-center gap-2"
+                >
+                  <i class="fas fa-check-circle text-blue-400"></i> Zero
+                  Conditional
+                </h3>
+                <p
+                  class="text-xs text-blue-400 uppercase font-bold tracking-wider mt-1"
+                >
+                  General Truths &amp; Facts
+                </p>
+              </div>
+            </div>
+            <p class="text-slate-300 text-sm leading-snug mb-3">
+              Used for scientific facts, general truths, and instructions where
+              the result is certain.
+            </p>
+            <div class="example-box border-blue-500">
+              <p class="text-slate-200 italic font-medium text-sm mb-1">
+                "If the system overheats, the alarm sounds."
+              </p>
+              <p class="text-xs text-slate-500 code-font">
+                <i class="fas fa-code mr-1"></i> If + Present Simple, Present
+                Simple
+              </p>
+            </div>
+          </div>
+          <!-- Card 2: First Conditional -->
+          <div class="glass-card p-6 group border-t-4 border-t-emerald-500">
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3
+                  class="text-xl font-bold title-font text-white flex items-center gap-2"
+                >
+                  <i class="fas fa-forward text-emerald-400"></i> First
+                  Conditional
+                </h3>
+                <p
+                  class="text-xs text-emerald-400 uppercase font-bold tracking-wider mt-1"
+                >
+                  Real Future Possibilities
+                </p>
+              </div>
+            </div>
+            <p class="text-slate-300 text-sm leading-snug mb-3">
+              Used for real situations that are likely to happen in the future
+              (planning &amp; predictions).
+            </p>
+            <div class="example-box border-emerald-500">
+              <p class="text-slate-200 italic font-medium text-sm mb-1">
+                "If we finish the code today, we will deploy it tomorrow."
+              </p>
+              <p class="text-xs text-slate-500 code-font">
+                <i class="fas fa-code mr-1"></i> If + Present Simple, Will +
+                Verb
+              </p>
+            </div>
+          </div>
+          <!-- Row 2 -->
+          <!-- Card 3: Second Conditional -->
+          <div class="glass-card p-6 group border-t-4 border-t-purple-500">
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3
+                  class="text-xl font-bold title-font text-white flex items-center gap-2"
+                >
+                  <i class="fas fa-lightbulb text-purple-400"></i> Second
+                  Conditional
+                </h3>
+                <p
+                  class="text-xs text-purple-400 uppercase font-bold tracking-wider mt-1"
+                >
+                  Hypothetical Situations
+                </p>
+              </div>
+            </div>
+            <p class="text-slate-300 text-sm leading-snug mb-3">
+              Used for unreal or imaginary situations in the present or future
+              (unlikely scenarios).
+            </p>
+            <div class="example-box border-purple-500">
+              <p class="text-slate-200 italic font-medium text-sm mb-1">
+                "If we had a larger budget, we would upgrade the server."
+              </p>
+              <p class="text-xs text-slate-500 code-font">
+                <i class="fas fa-code mr-1"></i> If + Past Simple, Would + Verb
+              </p>
+            </div>
+          </div>
+          <!-- Card 4: Third Conditional -->
+          <div class="glass-card p-6 group border-t-4 border-t-amber-500">
+            <div class="flex items-start justify-between mb-3">
+              <div>
+                <h3
+                  class="text-xl font-bold title-font text-white flex items-center gap-2"
+                >
+                  <i class="fas fa-history text-amber-400"></i> Third
+                  Conditional
+                </h3>
+                <p
+                  class="text-xs text-amber-400 uppercase font-bold tracking-wider mt-1"
+                >
+                  Past Regrets &amp; Reflection
+                </p>
+              </div>
+            </div>
+            <p class="text-slate-300 text-sm leading-snug mb-3">
+              Used for situations that did not happen in the past (post-mortem
+              analysis).
+            </p>
+            <div class="example-box border-amber-500">
+              <p class="text-slate-200 italic font-medium text-sm mb-1">
+                "If we had tested earlier, we would have found the bug."
+              </p>
+              <p class="text-xs text-slate-500 code-font">
+                <i class="fas fa-code mr-1"></i> If + Past Perfect, Would Have +
+                V3
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div
+        class="relative z-10 px-16 py-4 border-t border-slate-800/50 flex justify-between items-center text-sm text-slate-500 bg-slate-900/30 backdrop-blur-sm"
+      >
+        <div class="flex items-center gap-2">
+          <i class="fas fa-graduation-cap"></i>
+          <p>Unit 5: Applying for Jobs</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <span>Page 51</span>
+          <div class="w-16 h-1 bg-slate-800 rounded-full overflow-hidden">
+            <div class="w-full h-full bg-blue-500"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

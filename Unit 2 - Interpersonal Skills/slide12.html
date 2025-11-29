@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Using Idioms &amp; Phrases Effectively</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Poppins:wght@400;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", sans-serif;
+        background-color: #f3f4f6;
+      }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #0f172a;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .title-font {
+        font-family: "Poppins", sans-serif;
+      }
+      .geometric-shape {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(80px);
+        z-index: 0;
+      }
+      .glass-panel {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container text-white">
+      <!-- Background Ambience -->
+      <div
+        class="geometric-shape bg-indigo-600 opacity-20"
+        style="width: 600px; height: 600px; top: -200px; right: -200px"
+      ></div>
+      <div
+        class="geometric-shape bg-pink-500 opacity-10"
+        style="width: 500px; height: 500px; bottom: -100px; left: -100px"
+      ></div>
+      <!-- Header -->
+      <div class="relative z-10 px-16 pt-12 pb-6">
+        <div class="flex items-center gap-4 mb-4">
+          <span
+            class="bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider"
+            >Vocabulary</span
+          >
+          <div class="h-px flex-1 bg-slate-700"></div>
+        </div>
+        <h1 class="text-5xl font-bold title-font leading-tight">
+          Using Idioms &amp; Phrases Effectively
+        </h1>
+        <p class="text-xl text-indigo-400 mt-2 font-medium">
+          Real-World Applications
+        </p>
+      </div>
+      <!-- Main Content -->
+      <div class="relative z-10 flex-1 px-16 pb-12 flex items-center">
+        <div class="grid grid-cols-2 gap-16 w-full items-center">
+          <!-- Left Column: Bullets -->
+          <div class="space-y-6">
+            <!-- Item 1: Idioms -->
+            <div
+              class="glass-panel p-6 hover:bg-white/5 transition-colors duration-300 group"
+            >
+              <div class="flex items-start gap-4">
+                <div
+                  class="mt-1 w-10 h-10 rounded-full bg-yellow-500/20 flex items-center justify-center shrink-0 group-hover:bg-yellow-500 transition-colors"
+                >
+                  <i
+                    class="fas fa-comments text-yellow-400 group-hover:text-white text-lg"
+                  ></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-white mb-2 title-font">
+                    Expressive Idioms
+                  </h3>
+                  <p class="text-slate-300 leading-relaxed">
+                    Make interactions more engaging. <br />
+                    <span class="text-yellow-400 italic"
+                      >"Let's get the ball rolling"</span
+                    >
+                    (start the project) or
+                    <span class="text-yellow-400 italic">"Break the ice"</span>
+                    (initiate conversation).
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Item 2: Phrasal Verbs -->
+            <div
+              class="glass-panel p-6 hover:bg-white/5 transition-colors duration-300 group"
+            >
+              <div class="flex items-start gap-4">
+                <div
+                  class="mt-1 w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center shrink-0 group-hover:bg-blue-500 transition-colors"
+                >
+                  <i
+                    class="fas fa-clipboard-check text-blue-400 group-hover:text-white text-lg"
+                  ></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-white mb-2 title-font">
+                    Technical Phrasal Verbs
+                  </h3>
+                  <p class="text-slate-300 leading-relaxed">
+                    Standard in engineering reports. <br />
+                    Use
+                    <span class="text-blue-400 italic">"carry out"</span>
+                    (perform),
+                    <span class="text-blue-400 italic">"set up"</span>
+                    (configure), or
+                    <span class="text-blue-400 italic">"look into"</span>
+                    (investigate).
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Item 3: Collocations -->
+            <div
+              class="glass-panel p-6 hover:bg-white/5 transition-colors duration-300 group"
+            >
+              <div class="flex items-start gap-4">
+                <div
+                  class="mt-1 w-10 h-10 rounded-full bg-teal-500/20 flex items-center justify-center shrink-0 group-hover:bg-teal-500 transition-colors"
+                >
+                  <i
+                    class="fas fa-link text-teal-400 group-hover:text-white text-lg"
+                  ></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-semibold text-white mb-2 title-font">
+                    Professional Collocations
+                  </h3>
+                  <p class="text-slate-300 leading-relaxed">
+                    Natural word pairings for fluency. <br />
+                    Examples:
+                    <span class="text-teal-400 italic"
+                      >"develop a solution"</span
+                    >,
+                    <span class="text-teal-400 italic">"face challenges"</span>,
+                    or
+                    <span class="text-teal-400 italic">"meet a deadline"</span>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Right Column: Image -->
+          <div class="relative h-full flex items-center justify-center">
+            <div
+              class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border border-slate-700 group"
+            >
+              <img
+                alt="Professional Communication"
+                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                src="https://page.gensparksite.com/slides_images/b510a4fad265fc019dcbf18cef92491b.webp"
+              />
+              <!-- Overlay -->
+              <!-- <div
+                class="absolute inset-0 bg-slate-900 opacity-20 group-hover:opacity-10 transition-opacity"
+              ></div> -->
+              <!-- Floating Tag -->
+              <div
+                class="absolute bottom-6 left-6 bg-slate-900/90 backdrop-blur px-4 py-2 rounded-lg border border-slate-700"
+              >
+                <div class="flex items-center gap-2">
+                  <div
+                    class="w-2 h-2 rounded-full bg-indigo-500 animate-pulse"
+                  ></div>
+                  <p class="text-sm font-mono text-slate-300">
+                    Effective Communication
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Decorative elements behind image -->
+            <div
+              class="absolute -z-10 top-[-20px] right-[-20px] w-32 h-32 border-t-4 border-r-4 border-yellow-500/30 rounded-tr-3xl"
+            ></div>
+            <div
+              class="absolute -z-10 bottom-[-20px] left-[-20px] w-32 h-32 border-b-4 border-l-4 border-indigo-500/30 rounded-bl-3xl"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div
+        class="relative z-10 px-16 py-6 border-t border-slate-800/50 flex justify-between items-center text-sm text-slate-500"
+      >
+        <p>Unit 2: Interpersonal Skills</p>
+        <div class="flex items-center gap-2">
+          <span>Page 23</span>
+          <div class="w-12 h-1 bg-slate-800 rounded-full overflow-hidden">
+            <div class="w-1/2 h-full bg-indigo-500"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

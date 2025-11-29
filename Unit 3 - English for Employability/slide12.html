@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Speaking: Questions &amp; Requests</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Poppins:wght@400;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", sans-serif;
+        background-color: #f3f4f6;
+      }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #0f172a;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .title-font {
+        font-family: "Poppins", sans-serif;
+      }
+      .geometric-shape {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(80px);
+        z-index: 0;
+      }
+      .glass-card {
+        background: rgba(30, 41, 59, 0.4);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 20px;
+        transition: all 0.3s ease;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .glass-card:hover {
+        background: rgba(30, 41, 59, 0.6);
+        transform: translateY(-8px);
+        border-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      }
+      .speech-bubble {
+        position: relative;
+        padding: 16px 20px;
+        border-radius: 16px;
+        font-weight: 500;
+        margin-bottom: 12px;
+      }
+      .speech-bubble::after {
+        content: "";
+        position: absolute;
+        bottom: -8px;
+        left: 24px;
+        border-width: 8px 8px 0;
+        border-style: solid;
+        border-color: inherit;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+      }
+      /* Specific bubble colors handled via inline or utility classes to avoid gradients */
+    </style>
+  </head>
+  <body>
+    <div class="slide-container text-white">
+      <!-- Background Elements -->
+      <div
+        class="geometric-shape bg-blue-600 opacity-20"
+        style="width: 800px; height: 800px; top: -200px; right: -100px"
+      ></div>
+      <div
+        class="geometric-shape bg-purple-600 opacity-15"
+        style="width: 600px; height: 600px; bottom: -100px; left: -100px"
+      ></div>
+      <!-- Header -->
+      <div class="relative z-10 px-16 pt-12 pb-8">
+        <div class="flex items-center gap-4 mb-3">
+          <div
+            class="bg-blue-500/20 border border-blue-500/30 text-blue-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider"
+          >
+            Speaking Skills
+          </div>
+          <div class="h-px flex-1 bg-slate-700"></div>
+        </div>
+        <h1 class="text-4xl font-bold title-font leading-tight mb-2">
+          Questions &amp; Requests
+        </h1>
+        <p class="text-lg text-slate-400 max-w-3xl">
+          Essential structures for gathering information, seeking assistance,
+          and confirming details in professional settings.
+        </p>
+      </div>
+      <!-- Content Grid -->
+      <div class="relative z-10 px-16 pb-12 flex-1">
+        <div class="grid grid-cols-3 gap-8 h-full">
+          <!-- Card 1: Yes/No Questions -->
+          <div class="glass-card p-8 group border-t-4 border-t-blue-500">
+            <div class="flex items-center gap-4 mb-6">
+              <div
+                class="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center group-hover:bg-blue-500 transition-colors duration-300"
+              >
+                <i
+                  class="fas fa-circle-question text-2xl text-blue-400 group-hover:text-white"
+                ></i>
+              </div>
+              <h3 class="text-xl font-bold title-font text-white">
+                Yes/No Questions
+              </h3>
+            </div>
+            <p class="text-slate-300 text-sm leading-relaxed mb-6 min-h-[40px]">
+              Direct questions that expect a simple affirmation or denial. Used
+              to confirm facts or status.
+            </p>
+            <div class="mt-auto space-y-4">
+              <div
+                class="bg-blue-500/10 border border-blue-500/20 rounded-xl p-4"
+              >
+                <div class="flex items-start gap-3 mb-2">
+                  <i class="fas fa-comment text-blue-400 mt-1 text-xs"></i>
+                  <p class="text-slate-200 text-sm font-medium italic">
+                    "Is the report ready?"
+                  </p>
+                </div>
+                <p class="text-xs text-blue-400/80 pl-7">
+                  Use: Checking status
+                </p>
+              </div>
+              <div
+                class="bg-blue-500/10 border border-blue-500/20 rounded-xl p-4"
+              >
+                <div class="flex items-start gap-3 mb-2">
+                  <i class="fas fa-comment text-blue-400 mt-1 text-xs"></i>
+                  <p class="text-slate-200 text-sm font-medium italic">
+                    "Did you complete the design?"
+                  </p>
+                </div>
+                <p class="text-xs text-blue-400/80 pl-7">
+                  Use: Verifying completion
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2: Polite Requests -->
+          <div class="glass-card p-8 group border-t-4 border-t-purple-500">
+            <div class="flex items-center gap-4 mb-6">
+              <div
+                class="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center group-hover:bg-purple-500 transition-colors duration-300"
+              >
+                <i
+                  class="fas fa-hand-holding-heart text-2xl text-purple-400 group-hover:text-white"
+                ></i>
+              </div>
+              <h3 class="text-xl font-bold title-font text-white">
+                Polite Requests
+              </h3>
+            </div>
+            <p class="text-slate-300 text-sm leading-relaxed mb-6 min-h-[40px]">
+              Courteous ways to ask for assistance, favors, or action using
+              modal verbs like <em>could</em> or <em>would</em>.
+            </p>
+            <div class="mt-auto space-y-4">
+              <div
+                class="bg-purple-500/10 border border-purple-500/20 rounded-xl p-4"
+              >
+                <div class="flex items-start gap-3 mb-2">
+                  <i class="fas fa-comment text-purple-400 mt-1 text-xs"></i>
+                  <p class="text-slate-200 text-sm font-medium italic">
+                    "Could you share the file?"
+                  </p>
+                </div>
+                <p class="text-xs text-purple-400/80 pl-7">
+                  Use: Asking for resources
+                </p>
+              </div>
+              <div
+                class="bg-purple-500/10 border border-purple-500/20 rounded-xl p-4"
+              >
+                <div class="flex items-start gap-3 mb-2">
+                  <i class="fas fa-comment text-purple-400 mt-1 text-xs"></i>
+                  <p class="text-slate-200 text-sm font-medium italic">
+                    "Would you mind reviewing this?"
+                  </p>
+                </div>
+                <p class="text-xs text-purple-400/80 pl-7">
+                  Use: Asking for effort
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3: Question Tags -->
+          <div class="glass-card p-8 group border-t-4 border-t-emerald-500">
+            <div class="flex items-center gap-4 mb-6">
+              <div
+                class="w-12 h-12 rounded-xl bg-emerald-500/20 flex items-center justify-center group-hover:bg-emerald-500 transition-colors duration-300"
+              >
+                <i
+                  class="fas fa-tags text-2xl text-emerald-400 group-hover:text-white"
+                ></i>
+              </div>
+              <h3 class="text-xl font-bold title-font text-white">
+                Question Tags
+              </h3>
+            </div>
+            <p class="text-slate-300 text-sm leading-relaxed mb-6 min-h-[40px]">
+              Short phrases added to statements to invite agreement or confirm
+              understanding.
+            </p>
+            <div class="mt-auto space-y-4">
+              <div
+                class="bg-emerald-500/10 border border-emerald-500/20 rounded-xl p-4"
+              >
+                <div class="flex items-start gap-3 mb-2">
+                  <i class="fas fa-comment text-emerald-400 mt-1 text-xs"></i>
+                  <p class="text-slate-200 text-sm font-medium italic">
+                    "You've reviewed the report, haven't you?"
+                  </p>
+                </div>
+                <p class="text-xs text-emerald-400/80 pl-7">
+                  Use: Seeking confirmation
+                </p>
+              </div>
+              <div
+                class="bg-emerald-500/10 border border-emerald-500/20 rounded-xl p-4"
+              >
+                <div class="flex items-start gap-3 mb-2">
+                  <i class="fas fa-comment text-emerald-400 mt-1 text-xs"></i>
+                  <p class="text-slate-200 text-sm font-medium italic">
+                    "The data is accurate, isn't it?"
+                  </p>
+                </div>
+                <p class="text-xs text-emerald-400/80 pl-7">
+                  Use: Inviting agreement
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div
+        class="relative z-10 px-16 py-6 border-t border-slate-800/50 flex justify-between items-center text-sm text-slate-500 bg-slate-900/30 backdrop-blur-sm"
+      >
+        <div class="flex items-center gap-2">
+          <i class="fas fa-comments"></i>
+          <p>Unit 3: English for Employability</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <span>Page 36</span>
+          <div class="w-16 h-1 bg-slate-800 rounded-full overflow-hidden">
+            <div class="w-2/3 h-full bg-blue-500"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

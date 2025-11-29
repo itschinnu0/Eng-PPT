@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Vocabulary: Technical &amp; Purpose Language</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Poppins:wght@400;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", sans-serif;
+        background-color: #f3f4f6;
+      }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #0f172a;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .title-font {
+        font-family: "Poppins", sans-serif;
+      }
+      .geometric-shape {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(80px);
+        z-index: 0;
+      }
+      .glass-panel {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+      }
+      .vocab-item {
+        transition: all 0.3s ease;
+        border-left: 3px solid transparent;
+        padding: 8px 0;
+      }
+      .vocab-item:hover {
+        background: rgba(255, 255, 255, 0.05);
+        border-left-color: #06b6d4;
+        padding-left: 12px;
+      }
+      .statement-box {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 8px;
+        padding: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        margin-bottom: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container text-white">
+      <!-- Background Ambience -->
+      <div
+        class="geometric-shape bg-cyan-900 opacity-20"
+        style="width: 700px; height: 700px; top: -300px; right: -100px"
+      ></div>
+      <div
+        class="geometric-shape bg-blue-900 opacity-10"
+        style="width: 500px; height: 500px; bottom: -100px; left: -100px"
+      ></div>
+      <!-- Header -->
+      <div class="relative z-10 px-16 pt-12 pb-4">
+        <div class="flex items-center gap-3 mb-3">
+          <span
+            class="bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider"
+            >Employability</span
+          >
+          <div class="h-px w-12 bg-cyan-500/30"></div>
+        </div>
+        <h1 class="text-4xl font-bold title-font leading-tight">
+          Vocabulary: Technical &amp; Purpose Language
+        </h1>
+        <p class="text-lg text-slate-400 mt-1 font-light">
+          Mastering domain-specific terms and clear statements of intent
+        </p>
+      </div>
+      <!-- Main Content -->
+      <div class="relative z-10 flex-1 px-16 pb-12 flex items-center">
+        <div class="grid grid-cols-2 gap-12 w-full h-full">
+          <!-- Left Column: Text Content -->
+          <div class="flex flex-col gap-6 justify-center">
+            <!-- Section 1: Technical Vocabulary -->
+            <div class="glass-panel p-6">
+              <div class="flex items-center gap-3 mb-4">
+                <div
+                  class="w-8 h-8 rounded-lg bg-cyan-500/20 flex items-center justify-center"
+                >
+                  <i class="fas fa-microchip text-cyan-400 text-sm"></i>
+                </div>
+                <h3 class="text-xl font-semibold title-font">
+                  Technical Vocabulary
+                </h3>
+              </div>
+              <div class="space-y-1 text-slate-300 text-sm">
+                <div class="vocab-item flex items-center gap-3">
+                  <span class="w-1.5 h-1.5 rounded-full bg-cyan-500"></span>
+                  <p>
+                    <strong class="text-white">Cloud Computing:</strong>
+                    <span class="text-slate-400"
+                      >Software/IT infrastructure</span
+                    >
+                  </p>
+                </div>
+                <div class="vocab-item flex items-center gap-3">
+                  <span class="w-1.5 h-1.5 rounded-full bg-cyan-500"></span>
+                  <p>
+                    <strong class="text-white">Circuit Design:</strong>
+                    <span class="text-slate-400">Electrical engineering</span>
+                  </p>
+                </div>
+                <div class="vocab-item flex items-center gap-3">
+                  <span class="w-1.5 h-1.5 rounded-full bg-cyan-500"></span>
+                  <p>
+                    <strong class="text-white">Tolerance:</strong>
+                    <span class="text-slate-400"
+                      >Mechanical limits/deviations</span
+                    >
+                  </p>
+                </div>
+                <div class="vocab-item flex items-center gap-3">
+                  <span class="w-1.5 h-1.5 rounded-full bg-cyan-500"></span>
+                  <p>
+                    <strong class="text-white">Throughput:</strong>
+                    <span class="text-slate-400"
+                      >Industrial production rate</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Section 2: Purpose Statements -->
+            <div class="glass-panel p-6 border-l-4 border-l-emerald-500">
+              <div class="flex items-center gap-3 mb-4">
+                <div
+                  class="w-8 h-8 rounded-lg bg-emerald-500/20 flex items-center justify-center"
+                >
+                  <i class="fas fa-bullseye text-emerald-400 text-sm"></i>
+                </div>
+                <h3 class="text-xl font-semibold title-font">
+                  Purpose Statements
+                </h3>
+              </div>
+              <p
+                class="text-slate-400 text-xs uppercase tracking-wider mb-3 font-semibold"
+              >
+                Useful Templates
+              </p>
+              <div class="space-y-3">
+                <div class="statement-box">
+                  <p class="text-emerald-100 text-sm italic">
+                    "The purpose of this project is to optimize energy
+                    efficiency by 15%..."
+                  </p>
+                </div>
+                <div class="statement-box">
+                  <p class="text-emerald-100 text-sm italic">
+                    "This role aligns with my technical skills in Python and
+                    data analysis..."
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Section 3: Goal -->
+            <div
+              class="bg-slate-800 p-4 rounded-xl border border-slate-700 flex items-center justify-between"
+            >
+              <div>
+                <p
+                  class="text-xs text-slate-400 uppercase tracking-wide font-semibold"
+                >
+                  Why it matters
+                </p>
+                <p class="text-white font-medium mt-1">
+                  Precise language demonstrates professional competence
+                </p>
+              </div>
+              <div
+                class="w-10 h-10 bg-cyan-500/20 rounded-full flex items-center justify-center"
+              >
+                <i class="fas fa-user-tie text-cyan-400"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Right Column: Diagram/Image -->
+          <div class="h-full flex flex-col justify-center">
+            <div
+              class="relative w-full aspect-[4/3] bg-white rounded-2xl overflow-hidden shadow-2xl border border-slate-600 p-2"
+            >
+              <div
+                class="w-full h-full bg-slate-900 rounded-xl overflow-hidden relative group"
+              >
+                <img
+                  alt="Engineering Technical Documentation"
+                  class="w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-700"
+                  src="https://page.gensparksite.com/slides_images/dedd6915e401c5573d6d40bfb0d4f230.webp"
+                />
+                <!-- Overlay markers -->
+                <div class="absolute inset-0 bg-slate-900/20"></div>
+                <div
+                  class="absolute bottom-0 left-0 right-0 bg-slate-900/90 backdrop-blur py-3 px-5 border-t border-slate-700 flex justify-between items-center"
+                >
+                  <div>
+                    <span
+                      class="text-cyan-400 text-xs font-bold uppercase block"
+                      >Context</span
+                    >
+                    <span class="text-slate-300 text-sm"
+                      >Technical Documentation &amp; Planning</span
+                    >
+                  </div>
+                  <i class="fas fa-file-alt text-slate-400"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-center text-slate-500 text-xs mt-4">
+              <i class="fas fa-info-circle mr-1"></i>
+              Using correct terminology builds trust with technical
+              stakeholders.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div
+        class="relative z-10 px-16 py-6 border-t border-slate-800/50 flex justify-between items-center text-sm text-slate-500"
+      >
+        <div class="flex items-center gap-2">
+          <i class="fas fa-briefcase"></i>
+          <p>Unit 5: Applying for Jobs</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <span>Page 53</span>
+          <div class="w-16 h-1 bg-slate-800 rounded-full overflow-hidden">
+            <div class="w-full h-full bg-cyan-500"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

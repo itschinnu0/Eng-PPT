@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Writing: Job Applications (Cover Letters)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Poppins:wght@400;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", sans-serif;
+        background-color: #f3f4f6;
+      }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #0f172a;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .title-font {
+        font-family: "Poppins", sans-serif;
+      }
+      .geometric-shape {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(80px);
+        z-index: 0;
+      }
+      .step-card {
+        background: rgba(30, 41, 59, 0.7);
+        border: 1px solid rgba(71, 85, 105, 0.5);
+        border-radius: 16px;
+        padding: 24px;
+        transition: all 0.3s ease;
+        position: relative;
+        z-index: 10;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .step-card:hover {
+        background: rgba(51, 65, 85, 0.9);
+        transform: translateY(-5px);
+        border-color: rgba(59, 130, 246, 0.5);
+        box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+      }
+      .connector-line {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #334155;
+        z-index: 0;
+        transform: translateY(-50%);
+      }
+      .step-number {
+        position: absolute;
+        top: -15px;
+        left: 24px;
+        background-color: #3b82f6;
+        color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container text-white">
+      <!-- Background Elements -->
+      <div
+        class="geometric-shape bg-blue-900 opacity-20"
+        style="width: 800px; height: 800px; top: -300px; right: -200px"
+      ></div>
+      <div
+        class="geometric-shape bg-indigo-800 opacity-20"
+        style="width: 600px; height: 600px; bottom: -200px; left: -100px"
+      ></div>
+      <!-- Header -->
+      <div class="relative z-10 px-16 pt-12 pb-4">
+        <div class="flex items-center gap-3 mb-3">
+          <span
+            class="bg-blue-500/20 text-blue-300 border border-blue-500/30 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider"
+            >Employability Skills</span
+          >
+          <div class="h-px w-12 bg-blue-500/30"></div>
+        </div>
+        <h1 class="text-4xl font-bold title-font leading-tight mb-2">
+          Writing: Job Applications (Cover Letters)
+        </h1>
+        <p class="text-lg text-slate-400 max-w-3xl">
+          A step-by-step guide to crafting persuasive cover letters that secure
+          interviews.
+        </p>
+      </div>
+      <!-- Main Content -->
+      <div class="relative z-10 flex-1 px-16 flex flex-col justify-center">
+        <!-- Timeline Structure -->
+        <div class="relative py-8 mb-8">
+          <!-- Connector Line Background -->
+          <div class="connector-line hidden md:block top-1/2"></div>
+          <div class="grid grid-cols-3 gap-8 relative">
+            <!-- Step 1: Introduction -->
+            <div class="step-card group">
+              <div class="step-number">1</div>
+              <div
+                class="w-14 h-14 rounded-xl bg-blue-500/10 flex items-center justify-center mb-6 group-hover:bg-blue-500 group-hover:text-white transition-colors text-blue-400"
+              >
+                <i class="fas fa-user-tie text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold title-font text-white mb-3">
+                The Introduction
+              </h3>
+              <p class="text-slate-300 text-sm leading-relaxed mb-4 flex-grow">
+                Clearly state who you are and the specific role you are applying
+                for. Hook the reader immediately with a strong opening
+                statement.
+              </p>
+              <div class="border-t border-slate-700 pt-3">
+                <p class="text-xs text-slate-500 font-mono uppercase">
+                  Focus: Identity &amp; Intent
+                </p>
+              </div>
+            </div>
+            <!-- Step 2: The Pitch -->
+            <div class="step-card group">
+              <div class="step-number bg-indigo-500">2</div>
+              <div
+                class="w-14 h-14 rounded-xl bg-indigo-500/10 flex items-center justify-center mb-6 group-hover:bg-indigo-500 group-hover:text-white transition-colors text-indigo-400"
+              >
+                <i class="fas fa-handshake text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold title-font text-white mb-3">
+                Show Value &amp; Fit
+              </h3>
+              <p class="text-slate-300 text-sm leading-relaxed mb-4 flex-grow">
+                Explain why you fit the role by connecting your skills to their
+                needs. Demonstrate specific value through past achievements.
+              </p>
+              <div class="border-t border-slate-700 pt-3">
+                <p class="text-xs text-slate-500 font-mono uppercase">
+                  Focus: Relevance &amp; Impact
+                </p>
+              </div>
+            </div>
+            <!-- Step 3: The Closing -->
+            <div class="step-card group">
+              <div class="step-number bg-emerald-500">3</div>
+              <div
+                class="w-14 h-14 rounded-xl bg-emerald-500/10 flex items-center justify-center mb-6 group-hover:bg-emerald-500 group-hover:text-white transition-colors text-emerald-400"
+              >
+                <i class="fas fa-paperclip text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold title-font text-white mb-3">
+                Closing &amp; Attachments
+              </h3>
+              <p class="text-slate-300 text-sm leading-relaxed mb-4 flex-grow">
+                Reiterate your enthusiasm, propose a next step (interview), and
+                ensure all required documents are attached before sending.
+              </p>
+              <div class="border-t border-slate-700 pt-3">
+                <p class="text-xs text-slate-500 font-mono uppercase">
+                  Focus: Action &amp; Completion
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Bottom Section: Key Strategy -->
+        <div
+          class="bg-slate-800/50 border border-slate-700/50 rounded-xl p-6 flex items-center justify-between"
+        >
+          <div class="flex items-center gap-6">
+            <div class="bg-white/5 p-3 rounded-lg shrink-0">
+              <i class="fas fa-bullseye text-blue-400 text-xl"></i>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold title-font text-white mb-1">
+                Critical Success Factor: Tailoring
+              </h4>
+              <p class="text-slate-400 text-sm">
+                Avoid generic templates. Customize the content to reflect the
+                company's specific culture and requirements.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <div
+              class="px-4 py-2 rounded-lg bg-slate-900 border border-slate-700 flex items-center gap-2 text-sm text-slate-300"
+            >
+              <i class="fas fa-check text-emerald-500"></i>
+              <span>Research Company</span>
+            </div>
+            <div
+              class="px-4 py-2 rounded-lg bg-slate-900 border border-slate-700 flex items-center gap-2 text-sm text-slate-300"
+            >
+              <i class="fas fa-check text-emerald-500"></i>
+              <span>Use Keywords</span>
+            </div>
+            <div
+              class="px-4 py-2 rounded-lg bg-slate-900 border border-slate-700 flex items-center gap-2 text-sm text-slate-300"
+            >
+              <i class="fas fa-check text-emerald-500"></i>
+              <span>Proofread</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div
+        class="relative z-10 px-16 py-6 border-t border-slate-800/50 flex justify-between items-center text-sm text-slate-500 bg-slate-900/30 backdrop-blur-sm mt-auto"
+      >
+        <div class="flex items-center gap-2">
+          <i class="fas fa-briefcase"></i>
+          <p>Unit 5: Applying for Jobs</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <span>Page 49</span>
+          <div class="w-16 h-1 bg-slate-800 rounded-full overflow-hidden">
+            <div class="w-3/4 h-full bg-blue-500"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

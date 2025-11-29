@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Online Communication: Pros &amp; Cons</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Poppins:wght@400;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", sans-serif;
+        background-color: #0f172a;
+      }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #0f172a;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .title-font {
+        font-family: "Poppins", sans-serif;
+      }
+      .geometric-shape {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(80px);
+        z-index: 0;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        transition: all 0.3s ease;
+      }
+      .glass-card:hover {
+        background: rgba(255, 255, 255, 0.05);
+        transform: translateY(-2px);
+      }
+      /* Custom scrollbar for overflow content if needed */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.05);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container text-white">
+      <!-- Background Elements -->
+      <div
+        class="geometric-shape bg-emerald-600 opacity-10"
+        style="width: 800px; height: 800px; top: -200px; left: -200px"
+      ></div>
+      <div
+        class="geometric-shape bg-rose-600 opacity-10"
+        style="width: 800px; height: 800px; bottom: -200px; right: -200px"
+      ></div>
+      <!-- Grid Pattern Overlay -->
+      <div
+        class="absolute inset-0 z-0 opacity-5"
+        style="
+          background-image: radial-gradient(#94a3b8 1px, transparent 1px);
+          background-size: 30px 30px;
+        "
+      ></div>
+      <!-- Header Section -->
+      <div class="relative z-10 px-16 pt-10 pb-6">
+        <div class="flex items-center gap-3 mb-3">
+          <span
+            class="bg-slate-700/50 text-slate-300 border border-slate-600 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider"
+            >Digital Environment</span
+          >
+          <div class="h-px w-12 bg-slate-700"></div>
+        </div>
+        <h1 class="text-4xl font-bold title-font leading-tight">
+          Online Communication:
+          <span class="text-blue-400">Pros &amp; Cons</span>
+        </h1>
+        <p class="text-lg text-slate-400 mt-2 max-w-3xl">
+          Navigating the balance between digital efficiency and potential
+          workplace pitfalls.
+        </p>
+      </div>
+      <!-- Main Content Columns -->
+      <div class="relative z-10 flex-1 px-16 pb-10 flex gap-8">
+        <!-- Left Column: Pros (Benefits) -->
+        <div class="flex-1 flex flex-col">
+          <div
+            class="flex items-center gap-3 mb-6 p-4 bg-emerald-500/10 border border-emerald-500/20 rounded-xl"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-emerald-500 flex items-center justify-center shadow-lg shadow-emerald-500/20"
+            >
+              <i class="fas fa-thumbs-up text-white text-lg"></i>
+            </div>
+            <div>
+              <h2 class="text-xl font-bold title-font text-emerald-400">
+                The Advantages
+              </h2>
+              <p class="text-xs text-emerald-200/60 uppercase tracking-wide">
+                Benefits &amp; Opportunities
+              </p>
+            </div>
+          </div>
+          <div class="space-y-4 flex-1">
+            <!-- Pro Item 1 -->
+            <div
+              class="glass-card rounded-xl p-5 border-l-4 border-l-emerald-500"
+            >
+              <div class="flex items-start gap-4">
+                <div
+                  class="mt-1 w-8 h-8 rounded-full bg-emerald-500/20 flex items-center justify-center shrink-0"
+                >
+                  <i class="fas fa-bolt text-emerald-400 text-sm"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-white mb-1">
+                    Speed &amp; Convenience
+                  </h3>
+                  <p class="text-slate-400 text-sm leading-relaxed">
+                    Instant information exchange across any distance,
+                    accelerating project timelines and decision-making.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Pro Item 2 -->
+            <div
+              class="glass-card rounded-xl p-5 border-l-4 border-l-emerald-500"
+            >
+              <div class="flex items-start gap-4">
+                <div
+                  class="mt-1 w-8 h-8 rounded-full bg-emerald-500/20 flex items-center justify-center shrink-0"
+                >
+                  <i class="fas fa-globe text-emerald-400 text-sm"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-white mb-1">Global Reach</h3>
+                  <p class="text-slate-400 text-sm leading-relaxed">
+                    Seamlessly connects international teams, enabling 24/7
+                    productivity and diverse collaboration.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Pro Item 3 -->
+            <div
+              class="glass-card rounded-xl p-5 border-l-4 border-l-emerald-500"
+            >
+              <div class="flex items-start gap-4">
+                <div
+                  class="mt-1 w-8 h-8 rounded-full bg-emerald-500/20 flex items-center justify-center shrink-0"
+                >
+                  <i class="fas fa-laptop-house text-emerald-400 text-sm"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-white mb-1">
+                    Remote Collaboration
+                  </h3>
+                  <p class="text-slate-400 text-sm leading-relaxed">
+                    Supports flexible work arrangements and allows teams to
+                    function effectively without physical presence.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Center Divider -->
+        <div
+          class="w-px bg-slate-700/50 my-4 relative flex flex-col items-center justify-center"
+        >
+          <div
+            class="absolute w-8 h-8 rounded-full bg-slate-800 border border-slate-600 flex items-center justify-center z-10"
+          >
+            <span class="text-slate-400 text-xs font-bold">VS</span>
+          </div>
+        </div>
+        <!-- Right Column: Cons (Risks) -->
+        <div class="flex-1 flex flex-col">
+          <div
+            class="flex items-center gap-3 mb-6 p-4 bg-rose-500/10 border border-rose-500/20 rounded-xl"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-rose-500 flex items-center justify-center shadow-lg shadow-rose-500/20"
+            >
+              <i class="fas fa-exclamation-triangle text-white text-lg"></i>
+            </div>
+            <div>
+              <h2 class="text-xl font-bold title-font text-rose-400">
+                The Challenges
+              </h2>
+              <p class="text-xs text-rose-200/60 uppercase tracking-wide">
+                Risks &amp; Obstacles
+              </p>
+            </div>
+          </div>
+          <div class="space-y-4 flex-1">
+            <!-- Con Item 1 -->
+            <div class="glass-card rounded-xl p-5 border-l-4 border-l-rose-500">
+              <div class="flex items-start gap-4">
+                <div
+                  class="mt-1 w-8 h-8 rounded-full bg-rose-500/20 flex items-center justify-center shrink-0"
+                >
+                  <i class="fas fa-eye-slash text-rose-400 text-sm"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-white mb-1">
+                    Lack of Non-Verbal Cues
+                  </h3>
+                  <p class="text-slate-400 text-sm leading-relaxed">
+                    Absence of body language and tone can lead to
+                    misinterpretation of intent or emotion in text.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Con Item 2 -->
+            <div class="glass-card rounded-xl p-5 border-l-4 border-l-rose-500">
+              <div class="flex items-start gap-4">
+                <div
+                  class="mt-1 w-8 h-8 rounded-full bg-rose-500/20 flex items-center justify-center shrink-0"
+                >
+                  <i class="fas fa-comments text-rose-400 text-sm"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-white mb-1">
+                    Risk of Misunderstanding
+                  </h3>
+                  <p class="text-slate-400 text-sm leading-relaxed">
+                    Ambiguous phrasing in emails or chats can cause confusion,
+                    errors, or unnecessary conflict.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Con Item 3 -->
+            <div class="glass-card rounded-xl p-5 border-l-4 border-l-rose-500">
+              <div class="flex items-start gap-4">
+                <div
+                  class="mt-1 w-8 h-8 rounded-full bg-rose-500/20 flex items-center justify-center shrink-0"
+                >
+                  <i class="fas fa-bell-slash text-rose-400 text-sm"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-white mb-1">
+                    Information Overload
+                  </h3>
+                  <p class="text-slate-400 text-sm leading-relaxed">
+                    Constant notifications and message volume can lead to
+                    distraction and reduced focus on deep work.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div
+        class="relative z-10 px-16 py-6 border-t border-slate-800/50 flex justify-between items-center text-sm text-slate-500 bg-slate-900/30 backdrop-blur-sm"
+      >
+        <div class="flex items-center gap-2">
+          <i class="fas fa-balance-scale"></i>
+          <p>Unit 4: English in Digital World</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <span>Page 41</span>
+          <div class="w-16 h-1 bg-slate-800 rounded-full overflow-hidden">
+            <div class="w-1/2 h-full bg-blue-500"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

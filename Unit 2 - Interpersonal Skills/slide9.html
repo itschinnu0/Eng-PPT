@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Grammar: Sentence Patterns</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Poppins:wght@400;600;700&amp;family=Roboto+Mono:wght@400;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", sans-serif;
+        background-color: #f3f4f6;
+      }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #0f172a;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .title-font {
+        font-family: "Poppins", sans-serif;
+      }
+      .code-font {
+        font-family: "Roboto Mono", monospace;
+      }
+      .geometric-shape {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(60px);
+        z-index: 0;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 12px;
+        transition: all 0.3s ease;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .glass-card:hover {
+        background: rgba(255, 255, 255, 0.05);
+        transform: translateY(-5px);
+        border-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      }
+      .example-box {
+        background: rgba(0, 0, 0, 0.3);
+        border-left: 3px solid;
+        padding: 12px;
+        border-radius: 0 6px 6px 0;
+        margin-top: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container text-white">
+      <!-- Background Elements -->
+      <div
+        class="geometric-shape bg-indigo-600 opacity-20"
+        style="width: 900px; height: 900px; top: -400px; right: -200px"
+      ></div>
+      <div
+        class="geometric-shape bg-blue-500 opacity-10"
+        style="width: 600px; height: 600px; bottom: -200px; left: -100px"
+      ></div>
+      <div
+        class="geometric-shape bg-purple-500 opacity-10"
+        style="width: 400px; height: 400px; top: 100px; left: 100px"
+      ></div>
+      <!-- Header -->
+      <div class="relative z-10 px-12 pt-10 pb-6">
+        <div class="flex items-center gap-4 mb-3">
+          <div
+            class="bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider"
+          >
+            Unit 2: Interpersonal Skills
+          </div>
+          <div class="h-px flex-1 bg-slate-700"></div>
+        </div>
+        <h1 class="text-4xl font-bold title-font leading-tight mb-2">
+          Grammar: Sentence Patterns
+        </h1>
+        <p class="text-lg text-slate-400 max-w-4xl">
+          Four essential structures to build variety, precision, and flow in
+          professional engineering communication.
+        </p>
+      </div>
+      <!-- Content Grid -->
+      <div class="relative z-10 px-12 pb-10 flex-1">
+        <div class="grid grid-cols-4 gap-5 h-full">
+          <!-- Card 1: Simple -->
+          <div class="glass-card p-6 group border-t-4 border-t-emerald-500">
+            <div class="flex items-center justify-between mb-4">
+              <div
+                class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center group-hover:bg-emerald-500/20 transition-colors"
+              >
+                <i class="fas fa-cube text-xl text-emerald-400"></i>
+              </div>
+              <span
+                class="text-emerald-500/50 text-2xl font-bold opacity-20 title-font"
+                >01</span
+              >
+            </div>
+            <h3 class="text-xl font-bold title-font text-white mb-3">Simple</h3>
+            <p class="text-slate-300 text-xs leading-relaxed mb-4">
+              Contains one independent clause. Direct and specific statements.
+            </p>
+            <div class="mt-auto">
+              <div class="example-box border-emerald-500">
+                <p class="text-slate-200 italic font-medium text-xs mb-2">
+                  "The engineer solved the problem."
+                </p>
+                <p class="text-[10px] text-slate-500 code-font">
+                  [Indep. Clause]
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2: Compound -->
+          <div class="glass-card p-6 group border-t-4 border-t-blue-500">
+            <div class="flex items-center justify-between mb-4">
+              <div
+                class="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center group-hover:bg-blue-500/20 transition-colors"
+              >
+                <i class="fas fa-cubes text-xl text-blue-400"></i>
+              </div>
+              <span
+                class="text-blue-500/50 text-2xl font-bold opacity-20 title-font"
+                >02</span
+              >
+            </div>
+            <h3 class="text-xl font-bold title-font text-white mb-3">
+              Compound
+            </h3>
+            <p class="text-slate-300 text-xs leading-relaxed mb-4">
+              Two independent clauses connected by a conjunction (and, but, or).
+            </p>
+            <div class="mt-auto">
+              <div class="example-box border-blue-500">
+                <p class="text-slate-200 italic font-medium text-xs mb-2">
+                  "...and the team reviewed findings."
+                </p>
+                <p class="text-[10px] text-slate-500 code-font">
+                  [Indep] + [Conj] + [Indep]
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3: Complex -->
+          <div class="glass-card p-6 group border-t-4 border-t-purple-500">
+            <div class="flex items-center justify-between mb-4">
+              <div
+                class="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center group-hover:bg-purple-500/20 transition-colors"
+              >
+                <i class="fas fa-project-diagram text-xl text-purple-400"></i>
+              </div>
+              <span
+                class="text-purple-500/50 text-2xl font-bold opacity-20 title-font"
+                >03</span
+              >
+            </div>
+            <h3 class="text-xl font-bold title-font text-white mb-3">
+              Complex
+            </h3>
+            <p class="text-slate-300 text-xs leading-relaxed mb-4">
+              Independent clause + dependent clause. Shows relationships.
+            </p>
+            <div class="mt-auto">
+              <div class="example-box border-purple-500">
+                <p class="text-slate-200 italic font-medium text-xs mb-2">
+                  "...because the team provided data."
+                </p>
+                <p class="text-[10px] text-slate-500 code-font">
+                  [Indep] + [Dep]
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4: Compound-Complex -->
+          <div class="glass-card p-6 group border-t-4 border-t-amber-500">
+            <div class="flex items-center justify-between mb-4">
+              <div
+                class="w-10 h-10 rounded-lg bg-amber-500/10 flex items-center justify-center group-hover:bg-amber-500/20 transition-colors"
+              >
+                <i class="fas fa-network-wired text-xl text-amber-400"></i>
+              </div>
+              <span
+                class="text-amber-500/50 text-2xl font-bold opacity-20 title-font"
+                >04</span
+              >
+            </div>
+            <h3 class="text-xl font-bold title-font text-white mb-3">
+              Cmpd-Complex
+            </h3>
+            <p class="text-slate-300 text-xs leading-relaxed mb-4">
+              Two+ independent clauses and at least one dependent clause.
+            </p>
+            <div class="mt-auto">
+              <div class="example-box border-amber-500">
+                <p class="text-slate-200 italic font-medium text-xs mb-2">
+                  "I coded it, and she tested it while I watched."
+                </p>
+                <p class="text-[10px] text-slate-500 code-font">
+                  [2+ Indep] + [1+ Dep]
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div
+        class="relative z-10 px-12 py-4 border-t border-slate-800/50 flex justify-between items-center text-xs text-slate-500 bg-slate-900/30 backdrop-blur-sm"
+      >
+        <div class="flex items-center gap-2">
+          <i class="fas fa-book-open"></i>
+          <p>Unit 2: Interpersonal Skills</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <span>Page 20</span>
+          <div class="w-16 h-1 bg-slate-800 rounded-full overflow-hidden">
+            <div class="w-full h-full bg-purple-500"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

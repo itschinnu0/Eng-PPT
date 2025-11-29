@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Netiquette &amp; Social Media Behavior</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Poppins:wght@400;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", sans-serif;
+        background-color: #f3f4f6;
+      }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #0f172a;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .title-font {
+        font-family: "Poppins", sans-serif;
+      }
+      .geometric-shape {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(80px);
+        z-index: 0;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 16px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.3s ease;
+      }
+      .glass-card:hover {
+        background: rgba(255, 255, 255, 0.05);
+        border-color: rgba(255, 255, 255, 0.1);
+      }
+      .list-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 12px;
+        border-radius: 8px;
+        margin-bottom: 8px;
+        background: rgba(255, 255, 255, 0.02);
+        transition: background 0.2s;
+      }
+      .list-item:hover {
+        background: rgba(255, 255, 255, 0.05);
+      }
+      .icon-box {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container text-white">
+      <!-- Background Elements -->
+      <div
+        class="geometric-shape bg-emerald-600 opacity-10"
+        style="width: 800px; height: 800px; top: -200px; right: -200px"
+      ></div>
+      <div
+        class="geometric-shape bg-rose-600 opacity-10"
+        style="width: 600px; height: 600px; bottom: -100px; left: -100px"
+      ></div>
+      <!-- Header -->
+      <div class="relative z-10 px-16 pt-12 pb-6">
+        <div class="flex items-center gap-3 mb-3">
+          <span
+            class="bg-slate-700/50 text-slate-300 border border-slate-600 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider"
+            >Digital Professionalism</span
+          >
+          <div class="h-px w-12 bg-slate-600"></div>
+        </div>
+        <h1 class="text-4xl font-bold title-font leading-tight mb-2">
+          Netiquette &amp; Social Media Behavior
+        </h1>
+        <p class="text-lg text-slate-400 max-w-3xl">
+          Guidelines for maintaining a professional digital presence.
+        </p>
+      </div>
+      <!-- Main Content -->
+      <div class="relative z-10 px-16 pb-12 flex-1">
+        <div class="grid grid-cols-2 gap-12 h-full">
+          <!-- Do's Column -->
+          <div
+            class="glass-card relative overflow-hidden border-t-4 border-t-emerald-500"
+          >
+            <div class="p-6 border-b border-white/5 bg-emerald-500/5">
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-12 h-12 rounded-xl bg-emerald-500/20 flex items-center justify-center text-emerald-400"
+                >
+                  <i class="fas fa-check text-xl"></i>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold title-font text-white">Do's</h3>
+                  <p class="text-emerald-400/80 text-sm font-medium">
+                    Best Practices
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 flex-1 overflow-y-auto">
+              <div class="list-item">
+                <div class="icon-box bg-emerald-500/20 text-emerald-400">
+                  <i class="fas fa-check text-xs"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-white text-sm mb-1">
+                    Be Respectful &amp; Professional
+                  </h4>
+                  <p class="text-slate-400 text-xs leading-relaxed">
+                    Always maintain a polite tone and treat others with respect,
+                    regardless of the platform.
+                  </p>
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="icon-box bg-emerald-500/20 text-emerald-400">
+                  <i class="fas fa-check text-xs"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-white text-sm mb-1">
+                    Use Clear Subject Lines
+                  </h4>
+                  <p class="text-slate-400 text-xs leading-relaxed">
+                    Ensure email subjects and post titles clearly indicate the
+                    content and purpose.
+                  </p>
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="icon-box bg-emerald-500/20 text-emerald-400">
+                  <i class="fas fa-check text-xs"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-white text-sm mb-1">
+                    Share Relevant Content
+                  </h4>
+                  <p class="text-slate-400 text-xs leading-relaxed">
+                    Post content that adds value to professional discussions and
+                    aligns with your industry.
+                  </p>
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="icon-box bg-emerald-500/20 text-emerald-400">
+                  <i class="fas fa-check text-xs"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-white text-sm mb-1">
+                    Protect Privacy
+                  </h4>
+                  <p class="text-slate-400 text-xs leading-relaxed">
+                    Respect data privacy for yourself and others. Avoid sharing
+                    sensitive company information.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Don'ts Column -->
+          <div
+            class="glass-card relative overflow-hidden border-t-4 border-t-rose-500"
+          >
+            <div class="p-6 border-b border-white/5 bg-rose-500/5">
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-12 h-12 rounded-xl bg-rose-500/20 flex items-center justify-center text-rose-400"
+                >
+                  <i class="fas fa-times text-xl"></i>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold title-font text-white">
+                    Don'ts
+                  </h3>
+                  <p class="text-rose-400/80 text-sm font-medium">
+                    Behaviors to Avoid
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 flex-1 overflow-y-auto">
+              <div class="list-item">
+                <div class="icon-box bg-rose-500/20 text-rose-400">
+                  <i class="fas fa-times text-xs"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-white text-sm mb-1">
+                    Use Rude Language
+                  </h4>
+                  <p class="text-slate-400 text-xs leading-relaxed">
+                    Avoid offensive, aggressive, or unprofessional language,
+                    even in informal channels.
+                  </p>
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="icon-box bg-rose-500/20 text-rose-400">
+                  <i class="fas fa-times text-xs"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-white text-sm mb-1">
+                    Spam or Overshare
+                  </h4>
+                  <p class="text-slate-400 text-xs leading-relaxed">
+                    Don't clutter channels with irrelevant messages, excessive
+                    promotional content, or personal drama.
+                  </p>
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="icon-box bg-rose-500/20 text-rose-400">
+                  <i class="fas fa-times text-xs"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-white text-sm mb-1">
+                    Ignore Context
+                  </h4>
+                  <p class="text-slate-400 text-xs leading-relaxed">
+                    Don't use informal slang in formal emails or treat
+                    professional forums like personal social media.
+                  </p>
+                </div>
+              </div>
+              <div class="list-item">
+                <div class="icon-box bg-rose-500/20 text-rose-400">
+                  <i class="fas fa-times text-xs"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-white text-sm mb-1">
+                    Post in Anger
+                  </h4>
+                  <p class="text-slate-400 text-xs leading-relaxed">
+                    Never post or reply when emotional. Wait, review, and
+                    respond calmly to avoid regret.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div
+        class="relative z-10 px-16 py-6 border-t border-slate-800/50 flex justify-between items-center text-sm text-slate-500 bg-slate-900/30 backdrop-blur-sm"
+      >
+        <div class="flex items-center gap-2">
+          <i class="fas fa-user-shield"></i>
+          <p>Unit 4: English in Digital World</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <span>Page 42</span>
+          <div class="w-16 h-1 bg-slate-800 rounded-full overflow-hidden">
+            <div class="w-3/4 h-full bg-emerald-500"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

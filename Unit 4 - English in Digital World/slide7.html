@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Digital Resources: Problems vs Opportunities</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Poppins:wght@400;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", sans-serif;
+        background-color: #0f172a;
+      }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #0f172a;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .title-font {
+        font-family: "Poppins", sans-serif;
+      }
+      .geometric-shape {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(80px);
+        z-index: 0;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        transition: all 0.3s ease;
+      }
+      .glass-card:hover {
+        background: rgba(255, 255, 255, 0.05);
+        transform: translateY(-2px);
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.05);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container text-white">
+      <!-- Background Elements -->
+      <div
+        class="geometric-shape bg-emerald-600 opacity-10"
+        style="width: 800px; height: 800px; top: -200px; left: -200px"
+      ></div>
+      <div
+        class="geometric-shape bg-rose-600 opacity-10"
+        style="width: 800px; height: 800px; bottom: -200px; right: -200px"
+      ></div>
+      <!-- Header Section -->
+      <div class="relative z-10 px-16 pt-10 pb-6">
+        <div class="flex items-center gap-3 mb-3">
+          <span
+            class="bg-slate-700/50 text-slate-300 border border-slate-600 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider"
+            >Digital Ecosystem</span
+          >
+          <div class="h-px w-12 bg-slate-700"></div>
+        </div>
+        <h1 class="text-4xl font-bold title-font leading-tight">
+          Digital Resources:
+          <span class="text-blue-400">Problems vs Opportunities</span>
+        </h1>
+        <p class="text-lg text-slate-400 mt-2 max-w-3xl">
+          Analyzing the duality of modern technological assets in the workplace.
+        </p>
+      </div>
+      <!-- Main Content Columns -->
+      <div class="relative z-10 flex-1 px-16 pb-10 flex gap-8">
+        <!-- Left Column: Opportunities (Emerald) -->
+        <div class="flex-1 flex flex-col">
+          <div
+            class="flex items-center gap-3 mb-6 p-4 bg-emerald-500/10 border border-emerald-500/20 rounded-xl"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-emerald-500 flex items-center justify-center shadow-lg shadow-emerald-500/20"
+            >
+              <i class="fas fa-rocket text-white text-lg"></i>
+            </div>
+            <div>
+              <h2 class="text-xl font-bold title-font text-emerald-400">
+                The Opportunities
+              </h2>
+              <p class="text-xs text-emerald-200/60 uppercase tracking-wide">
+                Growth &amp; Innovation
+              </p>
+            </div>
+          </div>
+          <div class="space-y-4 flex-1">
+            <!-- Opportunity Item 1 -->
+            <div
+              class="glass-card rounded-xl p-5 border-l-4 border-l-emerald-500"
+            >
+              <div class="flex items-start gap-4">
+                <div
+                  class="mt-1 w-8 h-8 rounded-full bg-emerald-500/20 flex items-center justify-center shrink-0"
+                >
+                  <i class="fas fa-database text-emerald-400 text-sm"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-white mb-1">
+                    Access to Information
+                  </h3>
+                  <p class="text-slate-400 text-sm leading-relaxed">
+                    Instant retrieval of global knowledge and technical data
+                    accelerates learning and problem-solving.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Opportunity Item 2 -->
+            <div
+              class="glass-card rounded-xl p-5 border-l-4 border-l-emerald-500"
+            >
+              <div class="flex items-start gap-4">
+                <div
+                  class="mt-1 w-8 h-8 rounded-full bg-emerald-500/20 flex items-center justify-center shrink-0"
+                >
+                  <i
+                    class="fas fa-users-viewfinder text-emerald-400 text-sm"
+                  ></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-white mb-1">
+                    Global Collaboration
+                  </h3>
+                  <p class="text-slate-400 text-sm leading-relaxed">
+                    Digital tools break down geographical barriers, enabling
+                    seamless teamwork across continents.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Opportunity Item 3 -->
+            <div
+              class="glass-card rounded-xl p-5 border-l-4 border-l-emerald-500"
+            >
+              <div class="flex items-start gap-4">
+                <div
+                  class="mt-1 w-8 h-8 rounded-full bg-emerald-500/20 flex items-center justify-center shrink-0"
+                >
+                  <i class="fas fa-lightbulb text-emerald-400 text-sm"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-white mb-1">
+                    New Tools for Innovation
+                  </h3>
+                  <p class="text-slate-400 text-sm leading-relaxed">
+                    Advanced software and AI assistants drive productivity and
+                    foster creative engineering solutions.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Center Divider -->
+        <div
+          class="w-px bg-slate-700/50 my-4 relative flex flex-col items-center justify-center"
+        >
+          <div
+            class="absolute w-8 h-8 rounded-full bg-slate-800 border border-slate-600 flex items-center justify-center z-10"
+          >
+            <span class="text-slate-400 text-xs font-bold">VS</span>
+          </div>
+        </div>
+        <!-- Right Column: Problems (Rose) -->
+        <div class="flex-1 flex flex-col">
+          <div
+            class="flex items-center gap-3 mb-6 p-4 bg-rose-500/10 border border-rose-500/20 rounded-xl"
+          >
+            <div
+              class="w-10 h-10 rounded-lg bg-rose-500 flex items-center justify-center shadow-lg shadow-rose-500/20"
+            >
+              <i class="fas fa-shield-virus text-white text-lg"></i>
+            </div>
+            <div>
+              <h2 class="text-xl font-bold title-font text-rose-400">
+                The Problems
+              </h2>
+              <p class="text-xs text-rose-200/60 uppercase tracking-wide">
+                Risks &amp; Dependencies
+              </p>
+            </div>
+          </div>
+          <div class="space-y-4 flex-1">
+            <!-- Problem Item 1 -->
+            <div class="glass-card rounded-xl p-5 border-l-4 border-l-rose-500">
+              <div class="flex items-start gap-4">
+                <div
+                  class="mt-1 w-8 h-8 rounded-full bg-rose-500/20 flex items-center justify-center shrink-0"
+                >
+                  <i class="fas fa-user-lock text-rose-400 text-sm"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-white mb-1">Security Risks</h3>
+                  <p class="text-slate-400 text-sm leading-relaxed">
+                    Increased vulnerability to data breaches, hacking, and
+                    unauthorized access to sensitive IP.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Problem Item 2 -->
+            <div class="glass-card rounded-xl p-5 border-l-4 border-l-rose-500">
+              <div class="flex items-start gap-4">
+                <div
+                  class="mt-1 w-8 h-8 rounded-full bg-rose-500/20 flex items-center justify-center shrink-0"
+                >
+                  <i class="fas fa-brain text-rose-400 text-sm"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-white mb-1">
+                    Information Overload
+                  </h3>
+                  <p class="text-slate-400 text-sm leading-relaxed">
+                    Excessive data volume can lead to analysis paralysis and
+                    difficulty identifying critical information.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Problem Item 3 -->
+            <div class="glass-card rounded-xl p-5 border-l-4 border-l-rose-500">
+              <div class="flex items-start gap-4">
+                <div
+                  class="mt-1 w-8 h-8 rounded-full bg-rose-500/20 flex items-center justify-center shrink-0"
+                >
+                  <i
+                    class="fas fa-mobile-screen-button text-rose-400 text-sm"
+                  ></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-white mb-1">
+                    Dependence on Technology
+                  </h3>
+                  <p class="text-slate-400 text-sm leading-relaxed">
+                    Over-reliance on tools may erode manual troubleshooting
+                    skills and resilience during system outages.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div
+        class="relative z-10 px-16 py-6 border-t border-slate-800/50 flex justify-between items-center text-sm text-slate-500 bg-slate-900/30 backdrop-blur-sm"
+      >
+        <div class="flex items-center gap-2">
+          <i class="fas fa-book-reader"></i>
+          <p>Unit 4: English in Digital World</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <span>Page 43</span>
+          <div class="w-16 h-1 bg-slate-800 rounded-full overflow-hidden">
+            <div class="w-1/2 h-full bg-blue-500"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

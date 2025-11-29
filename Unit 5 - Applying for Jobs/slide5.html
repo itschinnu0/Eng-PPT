@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Writing: Resume/CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Poppins:wght@400;600;700&amp;family=Roboto+Mono:wght@400;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", sans-serif;
+        background-color: #f3f4f6;
+      }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #0f172a;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .title-font {
+        font-family: "Poppins", sans-serif;
+      }
+      .mono-font {
+        font-family: "Roboto Mono", monospace;
+      }
+
+      .geometric-shape {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(80px);
+        z-index: 0;
+      }
+
+      /* Checklist Animation */
+      .checklist-item {
+        transition: all 0.3s ease;
+      }
+      .checklist-item:hover {
+        background: rgba(255, 255, 255, 0.06);
+        transform: translateX(8px);
+        border-color: rgba(59, 130, 246, 0.3);
+      }
+      .checklist-icon {
+        transition: transform 0.3s ease;
+      }
+      .checklist-item:hover .checklist-icon {
+        transform: scale(1.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container text-white">
+      <!-- Background Elements -->
+      <div
+        class="geometric-shape bg-blue-900 opacity-30"
+        style="width: 800px; height: 800px; top: -200px; left: -200px"
+      ></div>
+      <div
+        class="geometric-shape bg-indigo-900 opacity-20"
+        style="width: 600px; height: 600px; bottom: -100px; right: -100px"
+      ></div>
+      <!-- Header -->
+      <div class="relative z-10 px-16 pt-10 pb-4">
+        <div class="flex items-center gap-3 mb-3">
+          <span
+            class="bg-blue-500/10 text-blue-400 border border-blue-500/20 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider"
+            >Employability Skills</span
+          >
+          <div class="h-px w-12 bg-blue-500/30"></div>
+        </div>
+        <h1 class="text-4xl font-bold title-font leading-tight text-white">
+          Writing: Resume/CV
+        </h1>
+        <p class="text-lg text-slate-400 mt-1">
+          Key elements for crafting a professional and impactful curriculum
+          vitae.
+        </p>
+      </div>
+      <!-- Main Content Grid -->
+      <div class="relative z-10 flex-1 px-16 pb-12 flex items-center">
+        <div class="grid grid-cols-12 gap-12 w-full">
+          <!-- Left Column: Checklist -->
+          <div class="col-span-5 flex flex-col justify-center space-y-3">
+            <!-- Item 1 -->
+            <div
+              class="checklist-item p-4 rounded-xl border border-white/5 bg-white/5 cursor-default group"
+            >
+              <div class="flex items-start gap-4">
+                <div
+                  class="checklist-icon w-6 h-6 mt-0.5 rounded-full bg-emerald-500/20 flex items-center justify-center shrink-0 text-emerald-400 group-hover:bg-emerald-500 group-hover:text-white"
+                >
+                  <i class="fas fa-ruler-vertical text-xs"></i>
+                </div>
+                <div>
+                  <h3
+                    class="text-base font-bold title-font text-white group-hover:text-emerald-300 transition-colors"
+                  >
+                    Concise Length
+                  </h3>
+                  <p class="text-sm text-slate-400 mt-1 leading-snug">
+                    Limit to 1-2 pages. Recruiters spend an average of 6-7
+                    seconds scanning a resume.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Item 2 -->
+            <div
+              class="checklist-item p-4 rounded-xl border border-white/5 bg-white/5 cursor-default group"
+            >
+              <div class="flex items-start gap-4">
+                <div
+                  class="checklist-icon w-6 h-6 mt-0.5 rounded-full bg-blue-500/20 flex items-center justify-center shrink-0 text-blue-400 group-hover:bg-blue-500 group-hover:text-white"
+                >
+                  <i class="fas fa-layer-group text-xs"></i>
+                </div>
+                <div>
+                  <h3
+                    class="text-base font-bold title-font text-white group-hover:text-blue-300 transition-colors"
+                  >
+                    Essential Sections
+                  </h3>
+                  <p class="text-sm text-slate-400 mt-1 leading-snug">
+                    Include Contact Info, Summary, Skills, Experience,
+                    Education, and relevant Projects.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Item 3 -->
+            <div
+              class="checklist-item p-4 rounded-xl border border-white/5 bg-white/5 cursor-default group"
+            >
+              <div class="flex items-start gap-4">
+                <div
+                  class="checklist-icon w-6 h-6 mt-0.5 rounded-full bg-purple-500/20 flex items-center justify-center shrink-0 text-purple-400 group-hover:bg-purple-500 group-hover:text-white"
+                >
+                  <i class="fas fa-filter text-xs"></i>
+                </div>
+                <div>
+                  <h3
+                    class="text-base font-bold title-font text-white group-hover:text-purple-300 transition-colors"
+                  >
+                    Tailored Content
+                  </h3>
+                  <p class="text-sm text-slate-400 mt-1 leading-snug">
+                    Use keywords from the job description to pass Applicant
+                    Tracking Systems (ATS).
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Item 4 -->
+            <div
+              class="checklist-item p-4 rounded-xl border border-white/5 bg-white/5 cursor-default group"
+            >
+              <div class="flex items-start gap-4">
+                <div
+                  class="checklist-icon w-6 h-6 mt-0.5 rounded-full bg-orange-500/20 flex items-center justify-center shrink-0 text-orange-400 group-hover:bg-orange-500 group-hover:text-white"
+                >
+                  <i class="fas fa-eye text-xs"></i>
+                </div>
+                <div>
+                  <h3
+                    class="text-base font-bold title-font text-white group-hover:text-orange-300 transition-colors"
+                  >
+                    Clean Layout
+                  </h3>
+                  <p class="text-sm text-slate-400 mt-1 leading-snug">
+                    Use bullet points, consistent fonts, and whitespace to
+                    ensure high readability.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Right Column: Visual Mockup -->
+          <div class="col-span-7 flex items-center justify-center pl-8 h-full">
+            <div
+              class="h-[480px] w-[360px] bg-white rounded-sm shadow-2xl relative transform -rotate-2 hover:rotate-0 transition-transform duration-500 overflow-hidden"
+            >
+              <!-- Resume Header -->
+              <div class="bg-slate-800 p-6 pb-8">
+                <div class="w-32 h-4 bg-white rounded mb-2"></div>
+                <div class="w-48 h-2 bg-blue-400 rounded opacity-80"></div>
+              </div>
+              <!-- Resume Body -->
+              <div class="p-6 flex gap-4 h-full">
+                <!-- Left Col (Main) -->
+                <div class="w-2/3 space-y-6">
+                  <!-- Experience 1 -->
+                  <div>
+                    <div class="w-24 h-3 bg-slate-800 rounded mb-2"></div>
+                    <div class="space-y-1.5">
+                      <div class="w-full h-1.5 bg-slate-200 rounded"></div>
+                      <div class="w-full h-1.5 bg-slate-200 rounded"></div>
+                      <div class="w-3/4 h-1.5 bg-slate-200 rounded"></div>
+                    </div>
+                  </div>
+                  <!-- Experience 2 -->
+                  <div>
+                    <div class="w-20 h-3 bg-slate-800 rounded mb-2"></div>
+                    <div class="space-y-1.5">
+                      <div class="w-full h-1.5 bg-slate-200 rounded"></div>
+                      <div class="w-5/6 h-1.5 bg-slate-200 rounded"></div>
+                      <div class="w-4/5 h-1.5 bg-slate-200 rounded"></div>
+                    </div>
+                  </div>
+                  <!-- Education -->
+                  <div>
+                    <div class="w-16 h-3 bg-slate-800 rounded mb-2"></div>
+                    <div class="w-full h-1.5 bg-slate-200 rounded mb-1"></div>
+                    <div class="w-1/2 h-1.5 bg-slate-200 rounded"></div>
+                  </div>
+                </div>
+                <!-- Right Col (Sidebar) -->
+                <div class="w-1/3 border-l border-slate-100 pl-4 space-y-6">
+                  <!-- Contact -->
+                  <div>
+                    <div class="w-12 h-3 bg-slate-400 rounded mb-2"></div>
+                    <div class="w-full h-1.5 bg-slate-200 rounded mb-1"></div>
+                    <div class="w-full h-1.5 bg-slate-200 rounded"></div>
+                  </div>
+                  <!-- Skills -->
+                  <div>
+                    <div class="w-10 h-3 bg-slate-400 rounded mb-2"></div>
+                    <div class="space-y-2">
+                      <div
+                        class="w-full h-1.5 bg-blue-100 rounded overflow-hidden"
+                      >
+                        <div class="w-3/4 h-full bg-blue-400"></div>
+                      </div>
+                      <div
+                        class="w-full h-1.5 bg-blue-100 rounded overflow-hidden"
+                      >
+                        <div class="w-1/2 h-full bg-blue-400"></div>
+                      </div>
+                      <div
+                        class="w-full h-1.5 bg-blue-100 rounded overflow-hidden"
+                      >
+                        <div class="w-5/6 h-full bg-blue-400"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Badge -->
+              <div
+                class="absolute top-4 right-4 bg-emerald-500 text-white text-[10px] font-bold px-2 py-1 rounded shadow-lg"
+              >
+                ATS READY
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div
+        class="relative z-10 px-16 py-6 border-t border-slate-800/50 flex justify-between items-center text-sm text-slate-500 bg-slate-900/50 backdrop-blur-md"
+      >
+        <div class="flex items-center gap-2">
+          <i class="fas fa-briefcase"></i>
+          <p>Unit 5: Applying for Jobs</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <span>Page 50</span>
+          <div class="w-16 h-1 bg-slate-800 rounded-full overflow-hidden">
+            <div class="w-1/2 h-full bg-blue-500"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Writing: Biography of an Achiever</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Poppins:wght@400;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", sans-serif;
+        background-color: #f3f4f6;
+      }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #0f172a;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .title-font {
+        font-family: "Poppins", sans-serif;
+      }
+      .geometric-shape {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(80px);
+        z-index: 0;
+      }
+      .step-card {
+        background: rgba(30, 41, 59, 0.7);
+        border: 1px solid rgba(71, 85, 105, 0.5);
+        border-radius: 16px;
+        padding: 24px;
+        transition: all 0.3s ease;
+        position: relative;
+        z-index: 10;
+      }
+      .step-card:hover {
+        background: rgba(51, 65, 85, 0.9);
+        transform: translateY(-5px);
+        border-color: rgba(59, 130, 246, 0.5);
+        box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+      }
+      .connector-line {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #334155;
+        z-index: 0;
+        transform: translateY(-50%);
+      }
+      .step-number {
+        position: absolute;
+        top: -15px;
+        left: 24px;
+        background-color: #3b82f6;
+        color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container text-white">
+      <!-- Background Elements -->
+      <div
+        class="geometric-shape bg-blue-900 opacity-20"
+        style="width: 800px; height: 800px; top: -300px; right: -200px"
+      ></div>
+      <div
+        class="geometric-shape bg-indigo-800 opacity-20"
+        style="width: 600px; height: 600px; bottom: -200px; left: -100px"
+      ></div>
+      <!-- Header -->
+      <div class="relative z-10 px-16 pt-12 pb-4">
+        <div class="flex items-center gap-3 mb-3">
+          <span
+            class="bg-blue-500/20 text-blue-300 border border-blue-500/30 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider"
+            >Writing Skills</span
+          >
+          <div class="h-px w-12 bg-blue-500/30"></div>
+        </div>
+        <h1 class="text-4xl font-bold title-font leading-tight mb-2">
+          Writing: Biography of an Achiever
+        </h1>
+        <p class="text-lg text-slate-400 max-w-3xl">
+          Structuring compelling narratives that highlight professional growth
+          and success.
+        </p>
+      </div>
+      <!-- Main Content -->
+      <div class="relative z-10 flex-1 px-16 flex flex-col justify-center">
+        <!-- Timeline Structure -->
+        <div class="relative py-8 mb-12">
+          <!-- Connector Line Background -->
+          <div class="connector-line hidden md:block top-1/2"></div>
+          <div class="grid grid-cols-3 gap-8 relative">
+            <!-- Step 1: The Journey -->
+            <div class="step-card group">
+              <div class="step-number">1</div>
+              <div
+                class="w-14 h-14 rounded-xl bg-blue-500/10 flex items-center justify-center mb-6 group-hover:bg-blue-500 group-hover:text-white transition-colors text-blue-400"
+              >
+                <i class="fas fa-route text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold title-font text-white mb-3">
+                The Journey
+              </h3>
+              <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                Establish the context by detailing the background, education,
+                and early career steps. Set the stage for growth.
+              </p>
+              <div class="border-t border-slate-700 pt-3">
+                <p class="text-xs text-slate-500 font-mono uppercase">
+                  Focus: Origins &amp; Context
+                </p>
+              </div>
+            </div>
+            <!-- Step 2: The Challenges -->
+            <div class="step-card group">
+              <div class="step-number bg-indigo-500">2</div>
+              <div
+                class="w-14 h-14 rounded-xl bg-indigo-500/10 flex items-center justify-center mb-6 group-hover:bg-indigo-500 group-hover:text-white transition-colors text-indigo-400"
+              >
+                <i class="fas fa-mountain text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold title-font text-white mb-3">
+                The Challenges
+              </h3>
+              <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                Identify key obstacles, failures, or turning points. Highlight
+                resilience and problem-solving strategies used.
+              </p>
+              <div class="border-t border-slate-700 pt-3">
+                <p class="text-xs text-slate-500 font-mono uppercase">
+                  Focus: Resilience &amp; Grit
+                </p>
+              </div>
+            </div>
+            <!-- Step 3: The Achievements -->
+            <div class="step-card group">
+              <div class="step-number bg-emerald-500">3</div>
+              <div
+                class="w-14 h-14 rounded-xl bg-emerald-500/10 flex items-center justify-center mb-6 group-hover:bg-emerald-500 group-hover:text-white transition-colors text-emerald-400"
+              >
+                <i class="fas fa-trophy text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold title-font text-white mb-3">
+                The Achievements
+              </h3>
+              <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                Conclude with major milestones, impact on the industry, and key
+                lessons learned. Celebrate the success.
+              </p>
+              <div class="border-t border-slate-700 pt-3">
+                <p class="text-xs text-slate-500 font-mono uppercase">
+                  Focus: Impact &amp; Legacy
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Bottom Section: Application -->
+        <div
+          class="bg-slate-800/50 border border-slate-700/50 rounded-xl p-6 flex items-center justify-between"
+        >
+          <div class="flex items-center gap-6">
+            <div class="bg-white/5 p-3 rounded-lg shrink-0">
+              <i class="fas fa-briefcase text-blue-400 text-xl"></i>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold title-font text-white mb-1">
+                Real-World Applications
+              </h4>
+              <p class="text-slate-400 text-sm">
+                Essential for professional branding in digital and print media.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <div
+              class="px-4 py-2 rounded-lg bg-slate-900 border border-slate-700 flex items-center gap-2 text-sm text-slate-300"
+            >
+              <i class="fab fa-linkedin text-blue-500"></i>
+              <span>LinkedIn Profiles</span>
+            </div>
+            <div
+              class="px-4 py-2 rounded-lg bg-slate-900 border border-slate-700 flex items-center gap-2 text-sm text-slate-300"
+            >
+              <i class="fas fa-building text-slate-400"></i>
+              <span>Corporate Bios</span>
+            </div>
+            <div
+              class="px-4 py-2 rounded-lg bg-slate-900 border border-slate-700 flex items-center gap-2 text-sm text-slate-300"
+            >
+              <i class="fas fa-newspaper text-slate-400"></i>
+              <span>Publications</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div
+        class="relative z-10 px-16 py-6 border-t border-slate-800/50 flex justify-between items-center text-sm text-slate-500 bg-slate-900/30 backdrop-blur-sm mt-auto"
+      >
+        <div class="flex items-center gap-2">
+          <i class="fas fa-pen-fancy"></i>
+          <p>Unit 2: Interpersonal Skills</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <span>Page 18</span>
+          <div class="w-16 h-1 bg-slate-800 rounded-full overflow-hidden">
+            <div class="w-1/2 h-full bg-blue-500"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
