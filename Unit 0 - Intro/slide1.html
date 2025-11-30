@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Communication Skills - Student Info</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Poppins:wght@400;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", sans-serif;
+        background-color: #0f172a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        overflow: auto;
+      }
+      .slide-container {
+        width: 1280px;
+        height: 720px;
+        background-color: #0f172a;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        margin: 20px auto;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+      }
+      @media (max-width: 1320px) {
+        .slide-container {
+          transform: scale(0.95);
+          transform-origin: center;
+        }
+      }
+      @media (max-width: 1280px) {
+        .slide-container {
+          transform: scale(0.9);
+        }
+      }
+      @media (max-width: 1024px) {
+        .slide-container {
+          transform: scale(0.75);
+        }
+      }
+      @media (max-width: 768px) {
+        .slide-container {
+          transform: scale(0.55);
+        }
+      }
+      .bg-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("https://page.gensparksite.com/slides_images/db6c9a5bcb5eac8a488d4d126f65f8df.webp");
+        background-size: cover;
+        background-position: center;
+        opacity: 0.15;
+        z-index: 0;
+      }
+      .geometric-shape {
+        position: absolute;
+        background-color: #3b82f6;
+        opacity: 0.1;
+        border-radius: 50%;
+        z-index: 1;
+      }
+      .content-wrapper {
+        position: relative;
+        z-index: 10;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px 80px;
+      }
+      .title-font {
+        font-family: "Poppins", sans-serif;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        padding: 20px;
+      }
+      .photo-placeholder {
+        width: 180px;
+        height: 220px;
+        border: 3px solid rgba(59, 130, 246, 0.5);
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.05);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+      .photo-placeholder img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .info-label {
+        font-weight: 600;
+        color: #60a5fa;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
+      .info-value {
+        font-size: 1.25rem;
+        color: #e2e8f0;
+        padding: 0.75rem 1rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-left: 4px solid #3b82f6;
+        border-radius: 8px;
+        min-height: 3rem;
+        display: flex;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container text-white">
+      <!-- Background Elements -->
+      <div class="bg-image"></div>
+      <!-- Decorative Geometric Elements -->
+      <div
+        class="geometric-shape"
+        style="
+          width: 600px;
+          height: 600px;
+          top: -200px;
+          right: -100px;
+          background-color: #2563eb;
+        "
+      ></div>
+      <div
+        class="geometric-shape"
+        style="
+          width: 400px;
+          height: 400px;
+          bottom: -100px;
+          left: -100px;
+          background-color: #0ea5e9;
+        "
+      ></div>
+      <!-- Main Content -->
+      <div class="content-wrapper">       
+        <!-- Main Title -->
+        <div class="mb-10">
+          <h1
+            class="text-6xl font-extrabold leading-tight title-font tracking-tight"
+          >
+            <span class="text-blue-400">Communication Skills</span>
+          </h1>
+          <div class="w-32 h-2 bg-blue-500 rounded-full mt-6"></div>
+        </div>
+
+        <!-- Student Information Grid -->
+        <div class="grid grid-cols-12 gap-8 max-w-6xl">
+          <!-- Left Column - Student Details -->
+          <div class="col-span-8 space-y-4">
+            <!-- Name -->
+            <div>
+              <div class="info-label">Name:</div>
+              <div class="info-value">
+                Vighnajit CHM
+              </div>
+            </div>
+            
+            <!-- USN -->
+            <div>
+              <div class="info-label">USN:</div>
+              <div class="info-value">
+                2025EC0099
+              </div>
+            </div>
+            
+            <!-- Branch -->
+            <div>
+              <div class="info-label">Branch:</div>
+              <div class="info-value">
+                Electronics and Communication Engineering
+              </div>
+            </div>
+            
+            <!-- Section & Sem -->
+            <div>
+              <div class="info-label">Section & Semester:</div>
+              <div class="info-value">
+                Section C - 1st Semester 
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column - Photo -->
+          <div class="col-span-4 flex items-center justify-center">
+            <div class="photo-placeholder">
+              <img src="" alt="Student Photo" style="display: none;" />
+              <div class="text-slate-500 text-center">
+                <i class="fas fa-user text-5xl mb-2"></i>
+                <p class="text-sm">Photo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Footer Area -->
+      <!-- <div
+        class="relative z-10 px-20 py-8 border-t border-white/10 flex justify-between items-center text-sm text-slate-400"
+      >
+        <div class="flex items-center gap-2">
+          <i class="fas fa-user-circle text-blue-500"></i>
+          <p>Student Information</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <span>Page 00</span>
+          <div class="w-12 h-1 bg-slate-800 rounded-full overflow-hidden">
+            <div class="w-full h-full bg-blue-500"></div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </body>
+</html>
